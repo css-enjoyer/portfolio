@@ -1,1 +1,23 @@
-/*# sourceMappingURL=App.css.map */
+:root {
+  --black: #0A0C08;
+  --white: #E6FAFC;
+  --green: #43F939;
+  --purple: #32163B;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body .App {
+  height: 100vh;
+  width: 100%;
+  background-color: var(--black);
+}
+body .App .bioColumn {
+  width: 20vw;
+  height: 100%;
+  border: 1px solid red;
+}/*# sourceMappingURL=App.css.map */
