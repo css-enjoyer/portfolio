@@ -26,6 +26,8 @@ body .App .bioColumn {
   border: 1px solid red;
   position: fixed;
   grid-area: bio;
+  padding: 100px;
+  color: var(--white);
 }
 body .App .infoColumn {
   width: 100%;
