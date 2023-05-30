@@ -32,4 +32,24 @@ body .App .infoColumn {
   height: 200%;
   border: 1px solid lime;
   grid-area: info;
+}
+
+@media screen and (max-width: 767px) {
+  body .App {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  body .App .bioColumn {
+    width: 100%;
+    height: 100%;
+    border: 1px solid red;
+    position: relative;
+  }
+  body .App .infoColumn {
+    width: 100%;
+    height: 100%;
+    border: 1px solid lime;
+  }
 }/*# sourceMappingURL=App.css.map */
