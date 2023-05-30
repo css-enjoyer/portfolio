@@ -10,14 +10,20 @@
     box-sizing: border-box;
 }
 body {
+    background-color: var(--black);
     .App {
         height: 100vh;
         width: 100%;
-        background-color: var(--black);
+        display: flex;
         .bioColumn {
-            width: 20vw;
+            width: 50vw;
             height: 100%;
             border: 1px solid red;
+        }
+        .infoColumn {
+            width: 50vw;
+            height: 200%;
+            border: 1px solid lime;
         }
     }
 }

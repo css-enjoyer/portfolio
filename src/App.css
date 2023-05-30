@@ -11,13 +11,21 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: var(--black);
+}
 body .App {
   height: 100vh;
   width: 100%;
-  background-color: var(--black);
+  display: flex;
 }
 body .App .bioColumn {
-  width: 20vw;
+  width: 50vw;
   height: 100%;
   border: 1px solid red;
+}
+body .App .infoColumn {
+  width: 50vw;
+  height: 200%;
+  border: 1px solid lime;
 }/*# sourceMappingURL=App.css.map */
