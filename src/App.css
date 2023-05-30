@@ -17,15 +17,19 @@ body {
 body .App {
   height: 100vh;
   width: 100%;
-  display: flex;
+  display: grid;
+  grid-template-areas: "bio info";
 }
 body .App .bioColumn {
-  width: 50vw;
+  width: 50%;
   height: 100%;
   border: 1px solid red;
+  position: fixed;
+  grid-area: bio;
 }
 body .App .infoColumn {
-  width: 50vw;
+  width: 100%;
   height: 200%;
   border: 1px solid lime;
+  grid-area: info;
 }/*# sourceMappingURL=App.css.map */
