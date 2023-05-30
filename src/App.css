@@ -47,7 +47,7 @@ body .App .bioColumn h4 {
   font-size: 20px;
 }
 body .App .infoColumn {
-  width: 100%;
+  width: 50%;
   height: 200%;
   border: 1px solid lime;
   grid-area: info;

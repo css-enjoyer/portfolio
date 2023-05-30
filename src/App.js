@@ -7,6 +7,7 @@ function App() {
 	<div className="App">
 		<BioColumn />
 		<InfoColumn />
+		<div className="sun"></div>
 	</div>
   	);
 }
