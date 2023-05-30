@@ -1,7 +1,8 @@
-@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@300;700&display=swap");
 :root {
   --black: #0A0C08;
   --white: #E6FAFC;
+  --grey: #c0cfd1;
   --green: #43F939;
   --purple: #32163B;
 }
@@ -20,6 +21,14 @@ h1 span, h4 span {
   font-weight: 700;
 }
 
+p {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+p span {
+  font-weight: 700;
+}
+
 body {
   background-color: var(--black);
 }
@@ -29,10 +38,10 @@ body .App {
   display: grid;
 }
 body .App .bioColumn {
-  width: 50%;
+  width: 40%;
   height: 100%;
   position: fixed;
-  padding: 100px;
+  padding: 100px 50px 100px 100px;
   border: 1px solid red;
   color: var(--white);
 }
@@ -45,12 +54,12 @@ body .App .bioColumn h4 {
   font-size: 20px;
 }
 body .App .infoColumn {
-  width: 50%;
+  width: 60%;
   height: 300%;
   margin-left: auto;
   padding: 100px;
   border: 1px solid lime;
-  color: var(--white);
+  color: var(--grey);
 }
 
 @media screen and (max-width: 767px) {
