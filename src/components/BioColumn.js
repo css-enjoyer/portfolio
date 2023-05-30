@@ -2,9 +2,8 @@
 function BioColumn() {
   	return (
 	<div className="bioColumn">
-        <h1>Hi, my name is Isaac Reyes</h1>
-        <h4>I'm a Computer Science student at the Univeristy of Santo Tomas, Philippines</h4>
-        <p>I like to create visually pleasing websites and learning new technologies</p>
+        <h1>Hi, my name is <span>Isaac Reyes</span></h1>
+        <h4>I study <span>Computer Science</span> at the <br />Univeristy of Santo Tomas, Philippines</h4>
 
         <a>About</a>
         <a>Experience</a>

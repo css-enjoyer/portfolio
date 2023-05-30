@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&display=swap');
 :root {
     --black: #0A0C08;
     --white: #E6FAFC;
@@ -9,6 +10,15 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+h1, h4 {
+    font-family: 'PT Serif', serif;
+    font-weight: 400;
+    span {
+        font-weight: 700;
+    }
+}
+
 body {
     background-color: var(--black);
     .App {
@@ -25,6 +35,14 @@ body {
             padding: 100px;
 
             color: var(--white);
+            h1 {
+                font-size: 50px;
+                line-height: 50px;
+                margin-bottom: 20px;
+            }
+            h4 {
+                font-size: 20px;
+            }
         }
         .infoColumn {
             width: 100%;
