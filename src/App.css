@@ -27,15 +27,13 @@ body .App {
   height: 100vh;
   width: 100%;
   display: grid;
-  grid-template-areas: "bio info";
 }
 body .App .bioColumn {
   width: 50%;
   height: 100%;
-  border: 1px solid red;
   position: fixed;
-  grid-area: bio;
   padding: 100px;
+  border: 1px solid red;
   color: var(--white);
 }
 body .App .bioColumn h1 {
@@ -48,9 +46,11 @@ body .App .bioColumn h4 {
 }
 body .App .infoColumn {
   width: 50%;
-  height: 200%;
+  height: 300%;
+  margin-left: auto;
+  padding: 100px;
   border: 1px solid lime;
-  grid-area: info;
+  color: var(--white);
 }
 
 @media screen and (max-width: 767px) {

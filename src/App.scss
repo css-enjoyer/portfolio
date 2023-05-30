@@ -25,15 +25,13 @@ body {
         height: 100vh;
         width: 100%;
         display: grid;
-        grid-template-areas: "bio info";
         .bioColumn {
             width: 50%;
             height: 100%;
-            border: 1px solid red;
             position: fixed;
-            grid-area: bio;
             padding: 100px;
-
+            
+            border: 1px solid red;
             color: var(--white);
             h1 {
                 font-size: 50px;
@@ -46,9 +44,12 @@ body {
         }
         .infoColumn {
             width: 50%;
-            height: 200%;
+            height: 300%;
+            margin-left: auto;
+            padding: 100px;
+
             border: 1px solid lime;
-            grid-area: info;
+            color: var(--white);
         }
     }
 }
