@@ -4,6 +4,7 @@
     --white: #E6FAFC;
     --grey: #c0cfd1;
     --green: #43F939;
+    --flair: #43f93934;
     --purple: #32163B;
 }
 * {
@@ -86,7 +87,7 @@ body {
                 h1 {
                     margin-bottom: 10px;
                 }
-                .infoCard {
+                .projCard {
                     display: flex;
                     gap: 20px;
                     padding: 20px;
@@ -107,6 +108,18 @@ body {
                         width: 100px;
                         height: 100px;
                         object-fit: cover;
+                    }
+                    .flairs {
+                        margin-top: 5px;
+                        display: flex;
+                        gap: 10px;
+                        div {
+                            font-size: 12px;
+                            background-color: var(--flair);
+                            color: var(--green);
+                            padding: 3px 6px;
+                            border-radius: 12px;
+                        }
                     }
                 }
             }

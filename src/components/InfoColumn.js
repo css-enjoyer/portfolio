@@ -1,8 +1,8 @@
 import EducCard from './EducCard';
-import InfoCard from './InfoCard';
+import ProjCard from './ProjCard';
 import ticImage from '.././images/tictactoe.jpeg';
 
-function InfoColumn() {
+function ProjColumn() {
   	return (
 	<div className="infoColumn">
 		<p>As a child, I've always enjoyed tinkering on my computer. Whether it was cheating infinite money on video games, installing those suspicious custom cursors (and nearly destroying my os), or trying to run my own minecraft servers were some of the experiences that developed my problem solving skills.
@@ -24,7 +24,7 @@ function InfoColumn() {
 
 		<div className="proj-section">
 			<h1>Projects</h1>
-			<InfoCard img={ticImage}
+			<ProjCard img={ticImage}
 					title="Tic-Tac-Toe"
 					subtitle="Created with vanilla JavaScript as part of the Odin Project curriculum that aims teach
 							the fundamentals of HTML, JavaScript and CSS."
@@ -34,4 +34,4 @@ function InfoColumn() {
   	);
 }
 
-export default InfoColumn;
+export default ProjColumn;
