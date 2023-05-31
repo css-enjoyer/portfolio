@@ -78,13 +78,15 @@ html {
                             position: absolute;
                             left: 2px;
                             margin-left: 20%;
-                            margin-top: 10px;
-                            width: 5%;
-                            height: 2px;
+                            margin-top: 0;
+                            width: 1%;
+                            height: 23px;
                             transition: .2s ease-in-out;
                         }
                         &:hover::after {
+                            margin-top: 10px;
                             width: 12%;
+                            height: 2px;
                         }
                     }
                     &:hover {
@@ -92,6 +94,7 @@ html {
                             opacity: .2;
                             transition: .2s ease-in-out;
                             &:hover {
+                                font-weight: 700;
                                 opacity: 1;
                                 color: var(--green);
                                 padding-left: 22%;
