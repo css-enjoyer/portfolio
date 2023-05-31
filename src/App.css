@@ -61,6 +61,29 @@ body .App .infoColumn {
   border: 1px solid lime;
   color: var(--grey);
 }
+body .App .infoColumn .educ-section {
+  margin: 130px 0px;
+}
+body .App .infoColumn .educ-section h1 {
+  margin-bottom: 10px;
+}
+body .App .infoColumn .educ-section .infoCard {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  transition: ease-in-out 0.3s;
+}
+body .App .infoColumn .educ-section .infoCard a {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  text-decoration: none;
+}
+body .App .infoColumn .educ-section .infoCard:hover {
+  border-radius: 9px;
+  background: linear-gradient(145deg, #0b0d09, #090b07);
+  box-shadow: 6px 6px 9px #050604, -6px -6px 9px #0f120c;
+}
 
 @media screen and (max-width: 767px) {
   body .App {
