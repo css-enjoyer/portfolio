@@ -180,6 +180,7 @@ html body .App .infoColumn .proj-section .projCard:hover {
 }
 html body .App .infoColumn .proj-section .projCard img {
   border: 2px solid rgba(192, 207, 209, 0.3294117647);
+  border-radius: 4px;
   width: 100px;
   height: 100px;
   -o-object-fit: cover;

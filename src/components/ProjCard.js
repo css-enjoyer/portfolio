@@ -1,6 +1,6 @@
 import Flair from "./Flair";
 
-function ProjCard({title, subtitle, titlelink, subtitlelink, img}) {
+function ProjCard({title, subtitle, titlelink, img, f1, f2, f3, f4}) {
     return (
     <div className="projCard">
         <div id="timeline-col">
@@ -10,9 +10,10 @@ function ProjCard({title, subtitle, titlelink, subtitlelink, img}) {
             <a href={titlelink} target="_blank">{title}</a><br/>
             <p>{subtitle}</p>
             <div className="flairs">
-                <Flair text="HTML"/>
-                <Flair text="JavaScript"/>
-                <Flair text="CSS"/>
+                <Flair text={f1}/>
+                <Flair text={f2}/>
+                <Flair text={f3}/>
+                <Flair text={f4}/>
             </div>
         </div>
     </div>

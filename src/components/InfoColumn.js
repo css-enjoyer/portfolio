@@ -1,6 +1,7 @@
 import EducCard from './EducCard';
 import ProjCard from './ProjCard';
 import ticImage from '.././images/tictactoe.jpeg';
+import hanImage from '.././images/hanover.png';
 
 function ProjColumn() {
   	return (
@@ -17,7 +18,7 @@ function ProjColumn() {
 
 		<div className="educ-section section" id="educ-section">
 			<h1>University Education</h1>
-			<EducCard date="1999 - Present" 
+			<EducCard date="2021 - Present" 
 					title="University of Santo Tomas" 
 					subtitle="BS Computer Science"
 					titlelink="https://www.ust.edu.ph/"
@@ -30,12 +31,18 @@ function ProjColumn() {
 					title="Tic-Tac-Toe"
 					subtitle="Created with vanilla JavaScript as part of the Odin Project curriculum that aims teach
 							the fundamentals of HTML, JavaScript and CSS."
-					titlelink="https://css-enjoyer.github.io/odin_tictactoe/"/>
-			<ProjCard img={ticImage}
-					title="Tic-Tac-Toe"
-					subtitle="Created with vanilla JavaScript as part of the Odin Project curriculum that aims teach
-							the fundamentals of HTML, JavaScript and CSS."
-					titlelink="https://css-enjoyer.github.io/odin_tictactoe/"/>
+					titlelink="https://css-enjoyer.github.io/odin_tictactoe/"
+					f1="HTML"
+					f2="CSS"
+					f3="JavaScript"/>
+			<ProjCard img={hanImage}
+					title="Hanover Store"
+					subtitle="An online sneaker retail store created with Java Servlets and JSP's with a Derby Database made as my final academic project as a sophomore."
+					titlelink="https://github.com/css-enjoyer/HanoverStore"
+					f1="Java"
+					f2="Servlets"
+					f3="JSP"
+					f4="Derby"/>
 			<ProjCard img={ticImage}
 					title="Tic-Tac-Toe"
 					subtitle="Created with vanilla JavaScript as part of the Odin Project curriculum that aims teach
