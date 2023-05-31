@@ -121,7 +121,7 @@ html body .App .infoColumn {
   width: 60%;
   height: 100%;
   margin-left: auto;
-  padding: 0 100px;
+  padding: 0 100px 100px 100px;
   color: var(--grey);
 }
 html body .App .infoColumn .section {
