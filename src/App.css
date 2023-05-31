@@ -110,14 +110,12 @@ html body .App .bioColumn .soc-list {
   display: flex;
   gap: 50px;
 }
-html body .App .bioColumn .soc-list button {
+html body .App .bioColumn .soc-list a {
   height: 30px;
   width: 30px;
-  background-color: transparent;
   color: white;
-  border: none;
 }
-html body .App .bioColumn .soc-list button img {
+html body .App .bioColumn .soc-list a img {
   filter: invert(100%) brightness(75%);
   cursor: pointer;
 }
@@ -178,13 +176,27 @@ html body .App .infoColumn .proj-section .projCard:hover {
   background: linear-gradient(145deg, #2a1131, #230e29);
   box-shadow: 5px 5px 18px rgba(16, 6, 18, 0.8039215686), -5px -5px 18px #3d1a48;
 }
-html body .App .infoColumn .proj-section .projCard img {
+html body .App .infoColumn .proj-section .projCard:hover .linkIcon {
+  transition: 0.06s ease-in-out;
+  right: -1px;
+  top: -1px;
+  filter: invert(100) brightness(100%);
+}
+html body .App .infoColumn .proj-section .projCard .thumbnail {
   border: 2px solid rgba(192, 207, 209, 0.3294117647);
   border-radius: 4px;
   width: 100px;
   height: 100px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+html body .App .infoColumn .proj-section .projCard .linkIcon {
+  height: 15px;
+  width: 15px;
+  filter: invert(100) brightness(70%);
+  margin-left: 6px;
+  position: relative;
+  top: 1px;
 }
 html body .App .infoColumn .proj-section .projCard .flairs {
   margin-top: 5px;

@@ -13,7 +13,7 @@ function ProjColumn() {
 			Today my passion lies in web development. Creating new experiences, implementing eye pleasing designs, and making them come to life with animations is where I find fulfilment.
 			<br />
 			<br />
-			In my free time, you can find me enjoying pool, working out, or missing my hooks in dota 2. </p>
+			In my free time, you can find me playing pool, working out, or missing my hooks in dota 2. </p>
 		</div>
 
 		<div className="educ-section section" id="educ-section">
@@ -43,16 +43,6 @@ function ProjColumn() {
 					f2="Servlets"
 					f3="JSP"
 					f4="Derby"/>
-			<ProjCard img={ticImage}
-					title="Tic-Tac-Toe"
-					subtitle="Created with vanilla JavaScript as part of the Odin Project curriculum that aims teach
-							the fundamentals of HTML, JavaScript and CSS."
-					titlelink="https://css-enjoyer.github.io/odin_tictactoe/"/>
-			<ProjCard img={ticImage}
-					title="Tic-Tac-Toe"
-					subtitle="Created with vanilla JavaScript as part of the Odin Project curriculum that aims teach
-							the fundamentals of HTML, JavaScript and CSS."
-					titlelink="https://css-enjoyer.github.io/odin_tictactoe/"/>
 		</div>
 	</div>
   	);

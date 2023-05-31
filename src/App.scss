@@ -108,12 +108,10 @@ html {
                 .soc-list {
                     display: flex;
                     gap: 50px;
-                    button {
+                    a {
                         height: 30px;
                         width: 30px;
-                        background-color: transparent;
                         color: white;
-                        border: none;
                         img {
                             filter: invert(100%) brightness(75%);
                             cursor: pointer;
@@ -176,13 +174,27 @@ html {
                             background: linear-gradient(145deg, #2a1131, #230e29);
                             box-shadow:  5px 5px 18px #100612cd,
                                         -5px -5px 18px #3d1a48;
+                            .linkIcon {
+                                transition: .06s ease-in-out;
+                                right: -1px;
+                                top: -1px;
+                                filter: invert(100) brightness(100%);
+                            }
                         }
-                        img {
+                        .thumbnail {
                             border: 2px solid #c0cfd154;
                             border-radius: 4px;
                             width: 100px;
                             height: 100px;
                             object-fit: cover;
+                        }
+                        .linkIcon {
+                            height: 15px;
+                            width: 15px;
+                            filter: invert(100) brightness(70%);
+                            margin-left: 6px;
+                            position: relative;
+                            top: 1px;
                         }
                         .flairs {
                             margin-top: 5px;
