@@ -5,7 +5,8 @@
   --grey: #c0cfd1;
   --green: #43F939;
   --flair: #43f93934;
-  --purple: #32163B;
+  --purple: #27102e;
+  --black-purple: #100514;
 }
 
 * {
@@ -31,10 +32,13 @@ p span {
 }
 
 body {
-  background-color: var(--black);
+  background: var(--purple);
 }
 body .App {
-  height: 100vh;
+  background: radial-gradient(circle farthest-side at var(--x) var(--y), var(--purple) 0%, var(--black-purple) 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  height: 100%;
   width: 100%;
   display: grid;
 }
@@ -55,7 +59,7 @@ body .App .bioColumn h4 {
 }
 body .App .infoColumn {
   width: 60%;
-  height: 300%;
+  height: 100%;
   margin-left: auto;
   padding: 100px;
   color: var(--grey);
@@ -79,9 +83,9 @@ body .App .infoColumn .educ-section .educCard a {
   text-decoration: none;
 }
 body .App .infoColumn .educ-section .educCard:hover {
-  border-radius: 9px;
-  background: linear-gradient(145deg, #0b0d09, #090b07);
-  box-shadow: 6px 6px 9px #050604, -6px -6px 9px #0f120c;
+  border-radius: 15px;
+  background: linear-gradient(145deg, #2a1131, #230e29);
+  box-shadow: 5px 5px 18px rgba(16, 6, 18, 0.8039215686), -5px -5px 18px #3d1a48;
 }
 body .App .infoColumn .proj-section {
   margin: 130px 0px;
@@ -102,9 +106,9 @@ body .App .infoColumn .proj-section .projCard a {
   text-decoration: none;
 }
 body .App .infoColumn .proj-section .projCard:hover {
-  border-radius: 9px;
-  background: linear-gradient(145deg, #0b0d09, #090b07);
-  box-shadow: 6px 6px 9px #050604, -6px -6px 9px #0f120c;
+  border-radius: 15px;
+  background: linear-gradient(145deg, #2a1131, #230e29);
+  box-shadow: 5px 5px 18px rgba(16, 6, 18, 0.8039215686), -5px -5px 18px #3d1a48;
 }
 body .App .infoColumn .proj-section .projCard img {
   width: 100px;
