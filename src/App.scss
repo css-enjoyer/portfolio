@@ -28,155 +28,158 @@ p {
         font-weight: 700;
     }
 }
-
-body {
-    background: var(--purple);
-    .App {
-        background: radial-gradient(circle farthest-side at var(--x) var(--y), 
-                                    var(--purple) 0%, 
-                                    var(--black-purple) 100%);
-        background-repeat: no-repeat;
-        background-attachment: fixed;                      
-        height: 100%;
-        width: 100%;
-        display: grid;
-        .bioColumn {
-            width: 40%;
+html {
+    overflow-y: auto;
+    scroll-behavior: smooth !important;
+    body {
+        background: var(--purple);
+        .App {
+            background: radial-gradient(circle farthest-side at var(--x) var(--y), 
+                                        var(--purple) 0%, 
+                                        var(--black-purple) 100%);
+            background-repeat: no-repeat;
+            background-attachment: fixed;                      
             height: 100%;
-            position: fixed;
-            padding: 100px 50px 100px 100px;
-            color: var(--white);
-            h1 {
-                font-size: 50px;
-                line-height: 50px;
-                margin-bottom: 20px;
-            }
-            h4 {
-                font-size: 18px;
-                color: var(--grey);
-            }
-            .sec-list {
-                display: flex;
-                flex-direction: column;
-                margin: 30px 0;
-                font-family: 'Poppins', sans-serif;
-                font-weight: 400;
-                gap: 20px;
-                font-size: 15px;
-                transition: .2s ease-in-out;
-                a {
-                    text-decoration: none;
-                    color: white;
-                    width: auto;
-                    margin-left: 20%;
-                    &::after {
-                        content: "";
-                        background-color: white;
-                        position: absolute;
-                        left: 0;
-                        margin-left: 20%;
-                        margin-top: 10px;
-                        width: 13%;
-                        height: 1px;
-                        transition: .2s ease-in-out;
-                    }
+            width: 100%;
+            display: grid;
+            .bioColumn {
+                width: 40%;
+                height: 100%;
+                position: fixed;
+                padding: 100px 50px 100px 100px;
+                color: var(--white);
+                h1 {
+                    font-size: 50px;
+                    line-height: 50px;
+                    margin-bottom: 20px;
                 }
-                &:hover {
+                h4 {
+                    font-size: 16px;
+                    color: var(--grey);
+                }
+                .sec-list {
+                    display: flex;
+                    flex-direction: column;
+                    margin: 30px 0;
+                    font-family: 'Poppins', sans-serif;
+                    font-weight: 400;
+                    gap: 20px;
+                    font-size: 15px;
+                    transition: .2s ease-in-out;
                     a {
-                        opacity: .2;
+                        text-decoration: none;
+                        color: var(--grey);
+                        width: auto;
+                        margin-left: 20%;
                         transition: .2s ease-in-out;
-                        &:hover {
-                            opacity: 1;
-                            color: var(--green);
+                        &::after {
+                            content: "";
+                            background-color: white;
+                            position: absolute;
+                            left: 0;
+                            margin-left: 20%;
+                            margin-top: 10px;
+                            width: 13%;
+                            height: 1px;
+                        }
+                    }
+                    &:hover {
+                        a {
+                            opacity: .2;
+                            transition: .2s ease-in-out;
+                            &:hover {
+                                opacity: 1;
+                                color: var(--green);
+                            }
+                        }
+                    }
+    
+                }
+                .soc-list {
+                    display: flex;
+                    gap: 50px;
+                    button {
+                        height: 30px;
+                        width: 30px;
+                        background-color: transparent;
+                        color: white;
+                        border: none;
+                        img {
+                            filter: invert(100%) brightness(75%);
+                            cursor: pointer;
                         }
                     }
                 }
-
             }
-            .soc-list {
-                display: flex;
-                gap: 50px;
-                button {
-                    height: 30px;
-                    width: 30px;
-                    background-color: transparent;
-                    color: white;
-                    border: none;
-                    img {
-                        filter: invert(100%) brightness(75%);
-                        cursor: pointer;
+            .infoColumn {
+                width: 60%;
+                height: 100%;
+                margin-left: auto;
+                padding: 100px;
+                // border: 1px solid lime;
+                color: var(--grey);
+                .educ-section {
+                    margin: 130px 0px;
+                    h1 {
+                        margin-bottom: 10px;
                     }
-                }
-            }
-        }
-        .infoColumn {
-            width: 60%;
-            height: 100%;
-            margin-left: auto;
-            padding: 100px;
-            // border: 1px solid lime;
-            color: var(--grey);
-            .educ-section {
-                margin: 130px 0px;
-                h1 {
-                    margin-bottom: 10px;
-                }
-                .educCard {
-                    display: flex;
-                    gap: 20px;
-                    padding: 20px;
-                    transition: ease-in-out .2s;
-                    a {
-                        color: white;
-                        font-family: 'Poppins', sans-serif;
-                        font-weight: 400;
-                        text-decoration: none;
-                    }
-                    &:hover {                  
-                        border-radius: 15px;
-                        background: linear-gradient(145deg, #2a1131, #230e29);
-                        box-shadow:  5px 5px 18px #100612cd,
-                                    -5px -5px 18px #3d1a48;
-                    }
-                }
-            }
-            .proj-section {
-                margin: 130px 0px;
-                h1 {
-                    margin-bottom: 10px;
-                }
-                .projCard {
-                    display: flex;
-                    gap: 20px;
-                    padding: 20px;
-                    transition: ease-in-out .2s;
-                    a {
-                        color: white;
-                        font-family: 'Poppins', sans-serif;
-                        font-weight: 700;
-                        text-decoration: none;
-                    }
-                    &:hover {                  
-                        border-radius: 15px;
-                        background: linear-gradient(145deg, #2a1131, #230e29);
-                        box-shadow:  5px 5px 18px #100612cd,
-                                    -5px -5px 18px #3d1a48;
-                    }
-                    img {
-                        width: 100px;
-                        height: 100px;
-                        object-fit: cover;
-                    }
-                    .flairs {
-                        margin-top: 5px;
+                    .educCard {
                         display: flex;
-                        gap: 10px;
-                        div {
-                            font-size: 12px;
-                            background-color: var(--flair);
-                            color: var(--green);
-                            padding: 3px 6px;
-                            border-radius: 12px;
+                        gap: 20px;
+                        padding: 20px;
+                        transition: ease-in-out .2s;
+                        a {
+                            color: white;
+                            font-family: 'Poppins', sans-serif;
+                            font-weight: 400;
+                            text-decoration: none;
+                        }
+                        &:hover {                  
+                            border-radius: 15px;
+                            background: linear-gradient(145deg, #2a1131, #230e29);
+                            box-shadow:  5px 5px 18px #100612cd,
+                                        -5px -5px 18px #3d1a48;
+                        }
+                    }
+                }
+                .proj-section {
+                    margin: 130px 0px;
+                    h1 {
+                        margin-bottom: 10px;
+                    }
+                    .projCard {
+                        display: flex;
+                        gap: 20px;
+                        padding: 20px;
+                        transition: ease-in-out .2s;
+                        a {
+                            color: white;
+                            font-family: 'Poppins', sans-serif;
+                            font-weight: 700;
+                            text-decoration: none;
+                        }
+                        &:hover {                  
+                            border-radius: 15px;
+                            background: linear-gradient(145deg, #2a1131, #230e29);
+                            box-shadow:  5px 5px 18px #100612cd,
+                                        -5px -5px 18px #3d1a48;
+                        }
+                        img {
+                            width: 100px;
+                            height: 100px;
+                            object-fit: cover;
+                        }
+                        .flairs {
+                            margin-top: 5px;
+                            display: flex;
+                            gap: 10px;
+                            div {
+                                font-size: 12px;
+                                background-color: var(--flair);
+                                color: var(--green);
+                                padding: 3px 6px;
+                                border-radius: 12px;
+                            }
                         }
                     }
                 }

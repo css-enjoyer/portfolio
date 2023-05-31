@@ -55,7 +55,7 @@ body .App .bioColumn h1 {
   margin-bottom: 20px;
 }
 body .App .bioColumn h4 {
-  font-size: 18px;
+  font-size: 16px;
   color: var(--grey);
 }
 body .App .bioColumn .sec-list {
@@ -70,9 +70,10 @@ body .App .bioColumn .sec-list {
 }
 body .App .bioColumn .sec-list a {
   text-decoration: none;
-  color: white;
+  color: var(--grey);
   width: auto;
   margin-left: 20%;
+  transition: 0.2s ease-in-out;
 }
 body .App .bioColumn .sec-list a::after {
   content: "";
@@ -83,7 +84,6 @@ body .App .bioColumn .sec-list a::after {
   margin-top: 10px;
   width: 13%;
   height: 1px;
-  transition: 0.2s ease-in-out;
 }
 body .App .bioColumn .sec-list:hover a {
   opacity: 0.2;
