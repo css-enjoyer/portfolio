@@ -31,6 +31,21 @@ function ProjColumn() {
 					subtitle="Created with vanilla JavaScript as part of the Odin Project curriculum that aims teach
 							the fundamentals of HTML, JavaScript and CSS."
 					titlelink="https://css-enjoyer.github.io/odin_tictactoe/"/>
+			<ProjCard img={ticImage}
+					title="Tic-Tac-Toe"
+					subtitle="Created with vanilla JavaScript as part of the Odin Project curriculum that aims teach
+							the fundamentals of HTML, JavaScript and CSS."
+					titlelink="https://css-enjoyer.github.io/odin_tictactoe/"/>
+			<ProjCard img={ticImage}
+					title="Tic-Tac-Toe"
+					subtitle="Created with vanilla JavaScript as part of the Odin Project curriculum that aims teach
+							the fundamentals of HTML, JavaScript and CSS."
+					titlelink="https://css-enjoyer.github.io/odin_tictactoe/"/>
+			<ProjCard img={ticImage}
+					title="Tic-Tac-Toe"
+					subtitle="Created with vanilla JavaScript as part of the Odin Project curriculum that aims teach
+							the fundamentals of HTML, JavaScript and CSS."
+					titlelink="https://css-enjoyer.github.io/odin_tictactoe/"/>
 		</div>
 	</div>
   	);
