@@ -39,7 +39,7 @@ body {
             position: fixed;
             padding: 100px 50px 100px 100px;
             
-            border: 1px solid red;
+            // border: 1px solid red;
             color: var(--white);
             h1 {
                 font-size: 50px;
@@ -55,19 +55,18 @@ body {
             height: 300%;
             margin-left: auto;
             padding: 100px;
-
-            border: 1px solid lime;
+            // border: 1px solid lime;
             color: var(--grey);
             .educ-section {
                 margin: 130px 0px;
                 h1 {
                     margin-bottom: 10px;
                 }
-                .infoCard {
+                .educCard {
                     display: flex;
                     gap: 20px;
                     padding: 20px;
-                    transition: ease-in-out .3s;
+                    transition: ease-in-out .2s;
                     a {
                         color: white;
                         font-family: 'Poppins', sans-serif;
@@ -79,6 +78,35 @@ body {
                         background: linear-gradient(145deg, #0b0d09, #090b07);
                         box-shadow:  6px 6px 9px #050604,
                                     -6px -6px 9px #0f120c;
+                    }
+                }
+            }
+            .proj-section {
+                margin: 130px 0px;
+                h1 {
+                    margin-bottom: 10px;
+                }
+                .infoCard {
+                    display: flex;
+                    gap: 20px;
+                    padding: 20px;
+                    transition: ease-in-out .2s;
+                    a {
+                        color: white;
+                        font-family: 'Poppins', sans-serif;
+                        font-weight: 700;
+                        text-decoration: none;
+                    }
+                    &:hover {                  
+                        border-radius: 9px;
+                        background: linear-gradient(145deg, #0b0d09, #090b07);
+                        box-shadow:  6px 6px 9px #050604,
+                                    -6px -6px 9px #0f120c;
+                    }
+                    img {
+                        width: 100px;
+                        height: 100px;
+                        object-fit: cover;
                     }
                 }
             }

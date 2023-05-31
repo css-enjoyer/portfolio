@@ -1,13 +1,16 @@
 
-function InfoCard({date}) {
+function InfoCard({title, subtitle, titlelink, subtitlelink, img}) {
     return (
     <div className="infoCard">
         <div id="timeline-col">
-            <p>{date}</p>
+            <img src={img}></img>
         </div>
         <div id="main-col">
-            <a href="https://www.ust.edu.ph/" target="_blank">University of Santo Tomas</a><br/>
-            <a href="https://www.ust.edu.ph/academics/programs/bachelor-of-science-in-computer-science/">BS Computer Science</a>
+            <a href={titlelink} target="_blank">{title}</a><br/>
+            <p>{subtitle}</p>
+            <div className="flairs">
+                {/* <Flair /> */}
+            </div>
         </div>
     </div>
     );

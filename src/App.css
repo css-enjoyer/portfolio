@@ -42,7 +42,6 @@ body .App .bioColumn {
   height: 100%;
   position: fixed;
   padding: 100px 50px 100px 100px;
-  border: 1px solid red;
   color: var(--white);
 }
 body .App .bioColumn h1 {
@@ -58,7 +57,6 @@ body .App .infoColumn {
   height: 300%;
   margin-left: auto;
   padding: 100px;
-  border: 1px solid lime;
   color: var(--grey);
 }
 body .App .infoColumn .educ-section {
@@ -67,22 +65,51 @@ body .App .infoColumn .educ-section {
 body .App .infoColumn .educ-section h1 {
   margin-bottom: 10px;
 }
-body .App .infoColumn .educ-section .infoCard {
+body .App .infoColumn .educ-section .educCard {
   display: flex;
   gap: 20px;
   padding: 20px;
-  transition: ease-in-out 0.3s;
+  transition: ease-in-out 0.2s;
 }
-body .App .infoColumn .educ-section .infoCard a {
+body .App .infoColumn .educ-section .educCard a {
   color: white;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   text-decoration: none;
 }
-body .App .infoColumn .educ-section .infoCard:hover {
+body .App .infoColumn .educ-section .educCard:hover {
   border-radius: 9px;
   background: linear-gradient(145deg, #0b0d09, #090b07);
   box-shadow: 6px 6px 9px #050604, -6px -6px 9px #0f120c;
+}
+body .App .infoColumn .proj-section {
+  margin: 130px 0px;
+}
+body .App .infoColumn .proj-section h1 {
+  margin-bottom: 10px;
+}
+body .App .infoColumn .proj-section .infoCard {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  transition: ease-in-out 0.2s;
+}
+body .App .infoColumn .proj-section .infoCard a {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+}
+body .App .infoColumn .proj-section .infoCard:hover {
+  border-radius: 9px;
+  background: linear-gradient(145deg, #0b0d09, #090b07);
+  box-shadow: 6px 6px 9px #050604, -6px -6px 9px #0f120c;
+}
+body .App .infoColumn .proj-section .infoCard img {
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 @media screen and (max-width: 767px) {

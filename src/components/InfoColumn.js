@@ -1,4 +1,6 @@
+import EducCard from './EducCard';
 import InfoCard from './InfoCard';
+import ticImage from '.././images/tictactoe.jpeg';
 
 function InfoColumn() {
   	return (
@@ -13,7 +15,20 @@ function InfoColumn() {
 
 		<div className="educ-section">
 			<h1>University Education</h1>
-			<InfoCard date="1999 - Present"/>
+			<EducCard date="1999 - Present" 
+					title="University of Santo Tomas" 
+					subtitle="BS Computer Science"
+					titlelink="https://www.ust.edu.ph/"
+					subtitlelink="https://www.ust.edu.ph/academics/programs/bachelor-of-science-in-computer-science/"/>
+		</div>
+
+		<div className="proj-section">
+			<h1>Projects</h1>
+			<InfoCard img={ticImage}
+					title="Tic-Tac-Toe"
+					subtitle="Created with vanilla JavaScript as part of the Odin Project curriculum that aims teach
+							the fundamentals of HTML, JavaScript and CSS."
+					titlelink="https://css-enjoyer.github.io/odin_tictactoe/"/>
 		</div>
 	</div>
   	);
