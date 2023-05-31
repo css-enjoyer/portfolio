@@ -70,17 +70,21 @@ html {
                         text-decoration: none;
                         color: var(--grey);
                         width: auto;
-                        margin-left: 20%;
+                        padding-left: 12%;
                         transition: .2s ease-in-out;
                         &::after {
                             content: "";
-                            background-color: white;
+                            background-color: var(--green);
                             position: absolute;
-                            left: 0;
+                            left: 2px;
                             margin-left: 20%;
                             margin-top: 10px;
-                            width: 13%;
-                            height: 1px;
+                            width: 5%;
+                            height: 2px;
+                            transition: .2s ease-in-out;
+                        }
+                        &:hover::after {
+                            width: 12%;
                         }
                     }
                     &:hover {
@@ -90,6 +94,7 @@ html {
                             &:hover {
                                 opacity: 1;
                                 color: var(--green);
+                                padding-left: 22%;
                             }
                         }
                     }
@@ -115,11 +120,14 @@ html {
                 width: 60%;
                 height: 100%;
                 margin-left: auto;
-                padding: 100px;
-                // border: 1px solid lime;
+                padding: 0 100px;
                 color: var(--grey);
+                .section {
+                    height: calc(100vh - 200px);
+                    padding-top: 100px;
+                }
                 .educ-section {
-                    margin: 130px 0px;
+                    margin: 100px 0px;
                     h1 {
                         margin-bottom: 10px;
                     }
@@ -143,7 +151,7 @@ html {
                     }
                 }
                 .proj-section {
-                    margin: 130px 0px;
+                    margin: 100px 0px;
                     h1 {
                         margin-bottom: 10px;
                     }

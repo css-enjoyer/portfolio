@@ -5,7 +5,7 @@ import ticImage from '.././images/tictactoe.jpeg';
 function ProjColumn() {
   	return (
 	<div className="infoColumn">
-		<div id="about-section">
+		<div className="section" id="about-section">
 			<p>As a child, I've always enjoyed tinkering on my computer. Whether it was cheating infinite money on video games, installing those suspicious custom cursors (and nearly destroying my os), or trying to run my own minecraft servers were some of the experiences that developed my problem solving skills.
 			<br />
 			<br />
@@ -15,7 +15,7 @@ function ProjColumn() {
 			In my free time, you can find me enjoying pool, working out, or missing my hooks in dota 2. </p>
 		</div>
 
-		<div className="educ-section" id="educ-section">
+		<div className="educ-section section" id="educ-section">
 			<h1>University Education</h1>
 			<EducCard date="1999 - Present" 
 					title="University of Santo Tomas" 
@@ -24,7 +24,7 @@ function ProjColumn() {
 					subtitlelink="https://www.ust.edu.ph/academics/programs/bachelor-of-science-in-computer-science/"/>
 		</div>
 
-		<div className="proj-section" id="proj-section">
+		<div className="proj-section section" id="proj-section">
 			<h1>Projects</h1>
 			<ProjCard img={ticImage}
 					title="Tic-Tac-Toe"
