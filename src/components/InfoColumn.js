@@ -46,7 +46,7 @@ function ProjColumn() {
 					f3="JavaScript"/>
 			<ProjCard img={hanImage}
 					title="Hanover Store"
-					subtitle="An online sneaker retail store created with Java Servlets and JSP's with a Derby Database made as my final academic project as a sophomore."
+					subtitle="An online sneaker retail store created with Java Servlets and JSP's with a Derby Database made for my final academic project as a sophomore."
 					titlelink="https://github.com/css-enjoyer/HanoverStore"
 					f1="Java"
 					f2="Servlets"
