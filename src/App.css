@@ -207,7 +207,7 @@ html body .App .infoColumn .proj-section .projCard .flairs div {
 
 @media screen and (max-width: 767px) {
   html body .App {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     display: flex;
     flex-direction: column;
