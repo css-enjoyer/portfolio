@@ -3,7 +3,14 @@ import ProjCard from './ProjCard';
 import ticImage from '.././images/tictactoe.jpeg';
 import hanImage from '.././images/hanover.png';
 
+import { useInView } from 'react-intersection-observer';
+
+
 function ProjColumn() {
+	const { ref: educRef, inView: educIsVisible } = useInView();
+	const { ref: projRef, inView: projIsVisible } = useInView();
+
+
   	return (
 	<div className="infoColumn">
 		<div className="section" id="about-section">
@@ -16,7 +23,7 @@ function ProjColumn() {
 			In my free time, you can find me playing pool, working out, or missing my hooks in dota 2. </p>
 		</div>
 
-		<div className="educ-section section" id="educ-section">
+		<div ref={educRef} className={`${"section educ-section"} + ${educIsVisible ? "educ-sectionVisible" : ""}`} id="educ-section">
 			<h1>University Education</h1>
 			<EducCard date="2021 - Present" 
 					title="University of Santo Tomas" 
@@ -25,7 +32,7 @@ function ProjColumn() {
 					subtitlelink="https://www.ust.edu.ph/academics/programs/bachelor-of-science-in-computer-science/"/>
 		</div>
 
-		<div className="proj-section section" id="proj-section">
+		<div ref={projRef} className={`${"proj-section section"} + ${projIsVisible ? "proj-sectionVisible" : ""}`} id="proj-section">
 			<h1>Projects</h1>
 			<ProjCard img={ticImage}
 					title="Tic-Tac-Toe"
