@@ -224,21 +224,20 @@ html body .App .infoColumn .proj-section .projCard .flairs div {
     border: 1px solid lime;
   }
 }
-.educ-sectionVisible {
-  animation-name: fade-in;
-  animation-duration: 1s;
-  animation-timing-function: ease-in-out;
-}
-
-.proj-sectionVisible {
-  animation: fade-in 1s ease-in-out;
+.sectionVisible {
+  animation: fade-in 0.5s ease-in-out;
+  position: relative;
 }
 
 @keyframes fade-in {
   0% {
+    color: var(--green);
+    text-shadow: 4px 0px 2px var(--green);
+    right: -10px;
     opacity: 0%;
   }
   100% {
+    right: 0;
     opacity: 100%;
   }
 }/*# sourceMappingURL=App.css.map */

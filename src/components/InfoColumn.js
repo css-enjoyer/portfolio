@@ -7,6 +7,7 @@ import { useInView } from 'react-intersection-observer';
 
 
 function ProjColumn() {
+	const { ref: aboutRef, inView: aboutIsVisible } = useInView();
 	const { ref: educRef, inView: educIsVisible } = useInView();
 	const { ref: projRef, inView: projIsVisible } = useInView();
 
@@ -14,7 +15,7 @@ function ProjColumn() {
   	return (
 	<div className="infoColumn">
 		<div className="margin" id="about-margin"></div>
-		<div className="section" id="about-section">
+		<div ref={aboutRef} className={`${"section"} + ${aboutIsVisible ? "sectionVisible" : ""}`} id="about-section">
 			<p>As a child I've always enjoyed tinkering on my computer, modding on video games, installing those suspicious custom cursors (and nearly destroying my os), or trying to run my own minecraft servers, these were some of the experiences that developed my problem solving skills.
 			<br />
 			<br />
@@ -24,7 +25,7 @@ function ProjColumn() {
 			In my free time, you can find me playing pool, working out, or missing my hooks in dota 2. </p>
 		</div>
 		<div className="margin" id="educ-margin"></div>
-		<div ref={educRef} className={`${"section educ-section"} + ${educIsVisible ? "educ-sectionVisible" : ""}`} id="educ-section">
+		<div ref={educRef} className={`${"section educ-section"} + ${educIsVisible ? "sectionVisible" : ""}`} id="educ-section">
 			<h1>University Education</h1>
 			<EducCard date="2021 - Present" 
 					title="University of Santo Tomas" 
@@ -33,7 +34,7 @@ function ProjColumn() {
 					subtitlelink="https://www.ust.edu.ph/academics/programs/bachelor-of-science-in-computer-science/"/>
 		</div>
 		<div className="margin" id="proj-margin"></div>
-		<div ref={projRef} className={`${"proj-section section"} + ${projIsVisible ? "proj-sectionVisible" : ""}`} id="proj-section">
+		<div ref={projRef} className={`${"proj-section section"} + ${projIsVisible ? "sectionVisible" : ""}`} id="proj-section">
 			<h1>Projects</h1>
 			<ProjCard img={ticImage}
 					title="Tic-Tac-Toe"
