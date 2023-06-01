@@ -7,6 +7,10 @@ import React, { useEffect, useRef } from 'react';
 function App() {
 	const bgRef = useRef(null);
 	useEffect(() => {
+		document.title = "Isaac Reyes"
+	 }, []);
+
+	useEffect(() => {
 		const updateMousePosition = (ev) => {
 			if(!bgRef.current) return;
 			const {clientX, clientY} = ev;
