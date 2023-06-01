@@ -13,6 +13,7 @@ function ProjColumn() {
 
   	return (
 	<div className="infoColumn">
+		<div className="margin" id="about-margin"></div>
 		<div className="section" id="about-section">
 			<p>As a child I've always enjoyed tinkering on my computer, modding on video games, installing those suspicious custom cursors (and nearly destroying my os), or trying to run my own minecraft servers, these were some of the experiences that developed my problem solving skills.
 			<br />
@@ -22,7 +23,7 @@ function ProjColumn() {
 			<br />
 			In my free time, you can find me playing pool, working out, or missing my hooks in dota 2. </p>
 		</div>
-
+		<div className="margin" id="educ-margin"></div>
 		<div ref={educRef} className={`${"section educ-section"} + ${educIsVisible ? "educ-sectionVisible" : ""}`} id="educ-section">
 			<h1>University Education</h1>
 			<EducCard date="2021 - Present" 
@@ -31,7 +32,7 @@ function ProjColumn() {
 					titlelink="https://www.ust.edu.ph/"
 					subtitlelink="https://www.ust.edu.ph/academics/programs/bachelor-of-science-in-computer-science/"/>
 		</div>
-
+		<div className="margin" id="proj-margin"></div>
 		<div ref={projRef} className={`${"proj-section section"} + ${projIsVisible ? "proj-sectionVisible" : ""}`} id="proj-section">
 			<h1>Projects</h1>
 			<ProjCard img={ticImage}

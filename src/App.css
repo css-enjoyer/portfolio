@@ -126,11 +126,8 @@ html body .App .infoColumn {
   padding: 0 100px 100px 100px;
   color: var(--grey);
 }
-html body .App .infoColumn .section {
-  padding-top: 100px;
-}
-html body .App .infoColumn .educ-section {
-  margin: 100px 0px;
+html body .App .infoColumn .margin {
+  height: 100px;
 }
 html body .App .infoColumn .educ-section h1 {
   margin-bottom: 10px;
@@ -151,9 +148,6 @@ html body .App .infoColumn .educ-section .educCard:hover {
   border-radius: 15px;
   background: linear-gradient(145deg, #2a1131, #230e29);
   box-shadow: 5px 5px 18px rgba(16, 6, 18, 0.8039215686), -5px -5px 18px #3d1a48;
-}
-html body .App .infoColumn .proj-section {
-  margin: 100px 0px;
 }
 html body .App .infoColumn .proj-section h1 {
   margin-bottom: 10px;

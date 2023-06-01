@@ -44,6 +44,7 @@ html {
             height: 100%;
             width: 100%;
             display: grid;
+            // ----------------------------- LEFT COLUMN -----------------------------
             .bioColumn {
                 width: 40%;
                 height: 100%;
@@ -119,17 +120,21 @@ html {
                     }
                 }
             }
+            // ----------------------------- RIGHT COLUMN -----------------------------
             .infoColumn {
                 width: 60%;
                 height: 100%;
                 margin-left: auto;
                 padding: 0 100px 100px 100px;
                 color: var(--grey);
+                .margin {
+                    height: 100px;
+                    // border: 1px solid blue;
+                }
                 .section {
-                    padding-top: 100px;
+                    // border: 1px solid red;
                 }
                 .educ-section {
-                    margin: 100px 0px;
                     h1 {
                         margin-bottom: 10px;
                     }
@@ -153,7 +158,6 @@ html {
                     }
                 }
                 .proj-section {
-                    margin: 100px 0px;
                     h1 {
                         margin-bottom: 10px;
                     }

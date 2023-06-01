@@ -9,9 +9,9 @@ function BioColumn() {
 		<h4>I study <span>Computer Science</span> at the <br />Univeristy of Santo Tomas, Philippines</h4>
 		
 		<div className="sec-list">
-			<a href="#about-section">About Me</a>
-			<a href="#educ-section">Education</a>
-			<a href="#proj-section">Projects</a>
+			<a href="#about-margin">About Me</a>
+			<a href="#educ-margin">Education</a>
+			<a href="#proj-margin">Projects</a>
 		</div>
 		
 		<div className="soc-list">
