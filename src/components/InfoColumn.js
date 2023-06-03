@@ -30,7 +30,7 @@ function ProjColumn() {
 		
 		{/* =================== TECHNOLOGIES SECTION =================== */}
 		<div className="margin" id="tech-margin"></div>
-		<div className="section" id="tech-section">
+		<div className="tech-section section" id="tech-section">
 			<h1>Technologies</h1>
 			<TechCard t0="Java" t1="HTML" t2="CSS" t3="JavaScript" t4="SASS" t5="MySQL" t6="PHP" t7="Node.js" t8="React.js" />
 		</div>

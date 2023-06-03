@@ -157,13 +157,14 @@ html body .App .infoColumn h1::before {
   top: 40px;
   left: -2px;
 }
-html body .App .infoColumn .educ-section .educCard {
+html body .App .infoColumn .cards {
   display: flex;
   gap: 20px;
   padding: 20px;
   transition: ease-in-out 0.2s;
+  margin: 10px 0;
 }
-html body .App .infoColumn .educ-section .educCard:hover {
+html body .App .infoColumn .cards:hover {
   border-radius: 15px;
   background: linear-gradient(145deg, #2a1131, #230e29);
   box-shadow: 5px 5px 18px rgba(16, 6, 18, 0.8039215686), -5px -5px 18px #3d1a48;
@@ -198,22 +199,10 @@ html body .App .infoColumn .educ-section .educCard .course-works-row:hover ul {
   max-height: 500px;
   opacity: 1;
 }
-html body .App .infoColumn .proj-section .projCard {
-  display: flex;
-  gap: 20px;
-  padding: 20px;
-  transition: ease-in-out 0.2s;
-  margin: 10px 0;
-}
 html body .App .infoColumn .proj-section .projCard a {
   color: white;
   font-family: "Poppins", sans-serif;
   text-decoration: none;
-}
-html body .App .infoColumn .proj-section .projCard:hover {
-  border-radius: 15px;
-  background: linear-gradient(145deg, #2a1131, #230e29);
-  box-shadow: 5px 5px 18px rgba(16, 6, 18, 0.8039215686), -5px -5px 18px #3d1a48;
 }
 html body .App .infoColumn .proj-section .projCard:hover .linkIcon {
   transition: 0.06s ease-in-out;

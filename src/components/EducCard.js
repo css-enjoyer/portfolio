@@ -6,7 +6,7 @@ function EducCard({date, title, subtitle, titlelink, subtitlelink, img, ... cour
         <li key={key}> {value}</li>
     ));
     return (
-    <div className="educCard">
+    <div className="educCard cards">
         <div id="timeline-col">
             <p>{date}</p>
             <img src={img}></img>

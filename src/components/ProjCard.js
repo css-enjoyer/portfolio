@@ -6,7 +6,7 @@ function ProjCard({title, subtitle, titlelink, img, ... flairs}) {
         <Flair text={value} />
     ));
     return (
-    <div className="projCard">
+    <div className="projCard cards">
         <div id="timeline-col">
             <img className="thumbnail" src={img}></img>
         </div>
