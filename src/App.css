@@ -150,6 +150,23 @@ html body .App .infoColumn .educ-section .educCard:hover {
   background: linear-gradient(145deg, #2a1131, #230e29);
   box-shadow: 5px 5px 18px rgba(16, 6, 18, 0.8039215686), -5px -5px 18px #3d1a48;
 }
+html body .App .infoColumn .educ-section .educCard .course-works-row {
+  margin-top: 10px;
+}
+html body .App .infoColumn .educ-section .educCard .course-works-row h4 {
+  font-size: 15px;
+}
+html body .App .infoColumn .educ-section .educCard .course-works-row ul {
+  max-height: 0px;
+  opacity: 0;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  transition: 0.2s ease-in-out;
+}
+html body .App .infoColumn .educ-section .educCard .course-works-row:hover ul {
+  max-height: 500px;
+  opacity: 1;
+}
 html body .App .infoColumn .proj-section h1 {
   margin-bottom: 10px;
 }

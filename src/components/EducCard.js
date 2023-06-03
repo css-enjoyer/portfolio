@@ -12,10 +12,12 @@ function EducCard({date, title, subtitle, titlelink, subtitlelink, img, ... cour
         <div id="main-col">
             <a href={titlelink} target="_blank">{title}</a><br/>
             <a href={subtitlelink}>{subtitle}</a>
-            <h4>Relevant Courseworks:</h4>
-            <ul>
-                {courseWorks}
-            </ul>
+            <div className="course-works-row">
+                <h4>Relevant Courseworks:</h4>
+                <ul>
+                    {courseWorks}
+                </ul>
+            </div>
         </div>
     </div>
     );

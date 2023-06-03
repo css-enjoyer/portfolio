@@ -156,6 +156,25 @@ html {
                             box-shadow:  5px 5px 18px #100612cd,
                                         -5px -5px 18px #3d1a48;
                         }
+                        .course-works-row {
+                            margin-top: 10px;
+                            h4 {
+                                font-size: 15px;
+                            }
+                            ul {
+                                max-height: 0px;
+                                opacity: 0;
+                                font-size: 14px;
+                                font-family: 'Poppins', sans-serif;
+                                transition: .2s ease-in-out;
+                            }
+                            &:hover {
+                                ul {
+                                    max-height: 500px;
+                                    opacity: 1;
+                                }
+                            }
+                        }
                     }
                 }
                 .proj-section {
