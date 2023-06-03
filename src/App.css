@@ -7,6 +7,8 @@
   --flair: #43f93934;
   --purple: #27102e;
   --black-purple: #100514;
+  --header-text: "PT Serif", serif;
+  --body-text: "Poppins", sans-serif;
 }
 
 * {
@@ -15,21 +17,27 @@
   box-sizing: border-box;
 }
 
-h1, h4 {
-  font-family: "PT Serif", serif;
+h1 {
+  font-family: var(--header-text);
   font-weight: 400;
 }
-h1 span, h4 span {
+h1 span {
   font-weight: 700;
   word-break: keep-all;
 }
 
-p {
-  font-family: "Poppins", sans-serif;
+h4, p, a {
+  font-family: var(--body-text);
   font-weight: 400;
+  color: var(--grey);
+  text-decoration: none;
 }
-p span {
+h4 span, p span, a span {
   font-weight: 700;
+}
+
+a {
+  color: white;
 }
 
 html {
@@ -114,7 +122,6 @@ html body .App .bioColumn .soc-list {
 html body .App .bioColumn .soc-list a {
   height: 30px;
   width: 30px;
-  color: white;
 }
 html body .App .bioColumn .soc-list a img {
   filter: invert(100%) brightness(75%);
@@ -138,12 +145,6 @@ html body .App .infoColumn .educ-section .educCard {
   gap: 20px;
   padding: 20px;
   transition: ease-in-out 0.2s;
-}
-html body .App .infoColumn .educ-section .educCard a {
-  color: white;
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  text-decoration: none;
 }
 html body .App .infoColumn .educ-section .educCard:hover {
   border-radius: 15px;
@@ -180,7 +181,6 @@ html body .App .infoColumn .proj-section .projCard {
 html body .App .infoColumn .proj-section .projCard a {
   color: white;
   font-family: "Poppins", sans-serif;
-  font-weight: 700;
   text-decoration: none;
 }
 html body .App .infoColumn .proj-section .projCard:hover {
