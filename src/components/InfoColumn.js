@@ -31,10 +31,10 @@ function ProjColumn() {
 	<div className="infoColumn">
 		<div className="margin" id="about-margin"></div>
 		<div ref={aboutRef} className={`${"section"} + ${aboutIsVisible ? "sectionVisible" : ""}`} id="about-section">
-			<p>As a child I've always enjoyed tinkering on my computer, modding on video games, installing those suspicious custom cursors (and nearly destroying my os), or trying to run my own minecraft servers, these were some of the experiences that developed my problem solving skills.
+			<p>As a child I've always enjoyed tinkering on my computer, modding on video games, installing those suspicious custom cursors (and nearly destroying my os), trying to run my own minecraft servers, these were some of the experiences that developed my problem solving skills.
 			<br />
 			<br />
-			Today my passion lies in web development. Creating new experiences, implementing eye pleasing designs, and making them come to life with animations is where I find fulfilment.
+			Today my passion lies in web development. Creating new experiences, implementing eye pleasing designs, and making them come to life with animations is where I find fulfillment.
 			<br />
 			<br />
 			In my free time, you can find me playing pool, working out, or missing my hooks in dota 2. </p>
