@@ -5,13 +5,14 @@ import hanImage from '.././images/hanover.png';
 
 import { useInView } from 'react-intersection-observer';
 
-
 function ProjColumn() {
 	const { ref: aboutRef, inView: aboutIsVisible } = useInView();
 	const { ref: educRef, inView: educIsVisible } = useInView();
 	const { ref: projRef, inView: projIsVisible } = useInView();
-
-
+	
+	const { ref: eduHeadRef, inView: eduHeadIsVisible } = useInView();
+	const { ref: projHeadRef, inView: projHeadIsVisible } = useInView();
+	
   	return (
 	<div className="infoColumn">
 		<div className="margin" id="about-margin"></div>
@@ -26,7 +27,7 @@ function ProjColumn() {
 		</div>
 		<div className="margin" id="educ-margin"></div>
 		<div ref={educRef} className={`${"section educ-section"} + ${educIsVisible ? "sectionVisible" : ""}`} id="educ-section">
-			<h1>Education & Experiences</h1>
+			<h1 ref={eduHeadRef} className={`${eduHeadIsVisible ? "headerVisible" : ""}`}>Education</h1>
 			<EducCard date="2021 - Present" 
 					title="University of Santo Tomas" 
 					subtitle="BS Computer Science"
@@ -44,7 +45,7 @@ function ProjColumn() {
 		</div>
 		<div className="margin" id="proj-margin"></div>
 		<div ref={projRef} className={`${"proj-section section"} + ${projIsVisible ? "sectionVisible" : ""}`} id="proj-section">
-			<h1>Projects</h1>
+			<h1 ref={projHeadRef} className={`${projHeadIsVisible ? "headerVisible" : ""}`}>Projects</h1>
 			<ProjCard img={ticImage}
 					title="Tic-Tac-Toe"
 					subtitle="Created with vanilla JavaScript as part of the Odin Project curriculum that aims teach
