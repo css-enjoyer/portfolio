@@ -19,11 +19,13 @@ import { useInView } from 'react-intersection-observer';
 
 function ProjColumn() {
 	const { ref: aboutRef, inView: aboutIsVisible } = useInView();
-	const { ref: educRef, inView: educIsVisible } = useInView();
+	const { ref: techRef, inView: techIsVisible } = useInView();
 	const { ref: projRef, inView: projIsVisible } = useInView();
+	const { ref: educRef, inView: educIsVisible } = useInView();
 	
-	const { ref: eduHeadRef, inView: eduHeadIsVisible } = useInView();
+	const { ref: techHeadRef, inView: techHeadIsVisible } = useInView();
 	const { ref: projHeadRef, inView: projHeadIsVisible } = useInView();
+	const { ref: eduHeadRef, inView: eduHeadIsVisible } = useInView();
 	
   	return (
 	<div className="infoColumn">
@@ -40,8 +42,8 @@ function ProjColumn() {
 		
 		{/* =================== TECHNOLOGIES SECTION =================== */}
 		<div className="margin" id="tech-margin"></div>
-		<div className="tech-section section" id="tech-section">
-			<h1>Technologies</h1>
+		<div ref={techRef} className={`${"tech-section section"} + ${techIsVisible ? "sectionVisible" : ""}`} id="tech-section">
+			<h1 ref={techHeadRef} className={`${techHeadIsVisible ? "headerVisible" : ""}`}>Technologies</h1>
 			<TechCard image0={javaImg}
 						imag1e={htmlImg}
 						image2={cssImg}
