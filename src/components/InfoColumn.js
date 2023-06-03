@@ -1,5 +1,7 @@
 import EducCard from './EducCard';
 import ProjCard from './ProjCard';
+import TechCard from './TechCard';
+
 import ticImage from '.././images/tictactoe.jpeg';
 import hanImage from '.././images/hanover.png';
 
@@ -25,24 +27,15 @@ function ProjColumn() {
 			<br />
 			In my free time, you can find me playing pool, working out, or missing my hooks in dota 2. </p>
 		</div>
-		<div className="margin" id="educ-margin"></div>
-		<div ref={educRef} className={`${"section educ-section"} + ${educIsVisible ? "sectionVisible" : ""}`} id="educ-section">
-			<h1 ref={eduHeadRef} className={`${eduHeadIsVisible ? "headerVisible" : ""}`}>Education</h1>
-			<EducCard date="2021 - Present" 
-					title="University of Santo Tomas" 
-					subtitle="BS Computer Science"
-					titlelink="https://www.ust.edu.ph/"
-					subtitlelink="https://www.ust.edu.ph/academics/programs/bachelor-of-science-in-computer-science/"
-					courseWork1="Data Structures and Algorithms"
-					courseWork2="Fundamentals of Programming (OOP)"
-					courseWork3="Human Computer Interaction"
-					courseWork4="Applications Development Front-End and Back-End"
-					courseWork5="Information Management (Database)"
-					courseWork6="Theory of Automata"
-					courseWork7="Design and Analysis of Algorithms"
-					courseWork8="Introduction to Artificial Intelligence"
-					courseWork9="Computer Architecture and Organization" />
+		
+		{/* =================== TECHNOLOGIES SECTION =================== */}
+		<div className="margin" id="tech-margin"></div>
+		<div className="section" id="tech-section">
+			<h1>Technologies</h1>
+			<TechCard t0="Java" t1="HTML" t2="CSS" t3="JavaScript" t4="SASS" t5="MySQL" t6="PHP" t7="Node.js" t8="React.js" />
 		</div>
+		{/* =================== PROJECT SECTION =================== */}
+
 		<div className="margin" id="proj-margin"></div>
 		<div ref={projRef} className={`${"proj-section section"} + ${projIsVisible ? "sectionVisible" : ""}`} id="proj-section">
 			<h1 ref={projHeadRef} className={`${projHeadIsVisible ? "headerVisible" : ""}`}>Projects</h1>
@@ -62,6 +55,27 @@ function ProjColumn() {
 					f2="Servlets"
 					f3="JSP"
 					f4="Derby"/>
+		</div>
+
+		{/* =================== EDUCATION SECTION =================== */}
+
+		<div className="margin" id="educ-margin"></div>
+		<div ref={educRef} className={`${"section educ-section"} + ${educIsVisible ? "sectionVisible" : ""}`} id="educ-section">
+			<h1 ref={eduHeadRef} className={`${eduHeadIsVisible ? "headerVisible" : ""}`}>Education</h1>
+			<EducCard date="2021 - Present" 
+					title="University of Santo Tomas" 
+					subtitle="BS Computer Science"
+					titlelink="https://www.ust.edu.ph/"
+					subtitlelink="https://www.ust.edu.ph/academics/programs/bachelor-of-science-in-computer-science/"
+					courseWork1="Data Structures and Algorithms"
+					courseWork2="Fundamentals of Programming (OOP)"
+					courseWork3="Human Computer Interaction"
+					courseWork4="Applications Development Front-End and Back-End"
+					courseWork5="Information Management (Database)"
+					courseWork6="Theory of Automata"
+					courseWork7="Design and Analysis of Algorithms"
+					courseWork8="Introduction to Artificial Intelligence"
+					courseWork9="Computer Architecture and Organization" />
 		</div>
 	</div>
   	);
