@@ -22,7 +22,6 @@ h1 {
     min-width: 350px;
     font-family: var(--header-text);
     font-weight: 400;
-    border: 1px solid red;
     span {
         font-weight: 700;
         white-space: nowrap;
@@ -37,9 +36,16 @@ h4, p, a {
         font-weight: 700;
     }
 }
-
 a {
     color: white;
+}
+.icon {
+    height: 15px;
+    width: 15px;
+    filter: invert(100) brightness(70%);
+    margin-left: 6px;
+    position: relative;
+    top: 1px;
 }
 
 html {
@@ -171,16 +177,12 @@ html {
                                 filter: invert(100) brightness(100%);
                             }
                         }
-                        .linkIcon {
-                            height: 15px;
-                            width: 15px;
-                            filter: invert(100) brightness(70%);
-                            margin-left: 6px;
-                            position: relative;
-                            top: 1px;
-                        }
                         .course-works-row {
                             margin-top: 10px;
+                            .caretIcon {
+                                rotate: -180deg;
+                                transition: .3s ease-in-out;
+                            }
                             h4 {
                                 font-size: 15px;
                             }
@@ -192,6 +194,9 @@ html {
                                 transition: .2s ease-in-out;
                             }
                             &:hover {
+                                .caretIcon {
+                                    rotate: 0deg;
+                                }
                                 ul {
                                     max-height: 500px;
                                     opacity: 1;

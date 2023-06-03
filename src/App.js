@@ -35,7 +35,7 @@ function App() {
 export default App;
 
 // To Add:
-// - Relevant Course Works
+// - Relevant Course Works == DONE
 // -- Add a hover indicator
 // -- Add a link indicator
 // - Add more secondary colors (green)

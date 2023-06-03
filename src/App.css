@@ -21,7 +21,6 @@ h1 {
   min-width: 350px;
   font-family: var(--header-text);
   font-weight: 400;
-  border: 1px solid red;
 }
 h1 span {
   font-weight: 700;
@@ -40,6 +39,15 @@ h4 span, p span, a span {
 
 a {
   color: white;
+}
+
+.icon {
+  height: 15px;
+  width: 15px;
+  filter: invert(100) brightness(70%);
+  margin-left: 6px;
+  position: relative;
+  top: 1px;
 }
 
 html {
@@ -166,16 +174,12 @@ html body .App .infoColumn .educ-section .educCard:hover .linkIcon {
   top: -1px;
   filter: invert(100) brightness(100%);
 }
-html body .App .infoColumn .educ-section .educCard .linkIcon {
-  height: 15px;
-  width: 15px;
-  filter: invert(100) brightness(70%);
-  margin-left: 6px;
-  position: relative;
-  top: 1px;
-}
 html body .App .infoColumn .educ-section .educCard .course-works-row {
   margin-top: 10px;
+}
+html body .App .infoColumn .educ-section .educCard .course-works-row .caretIcon {
+  rotate: -180deg;
+  transition: 0.3s ease-in-out;
 }
 html body .App .infoColumn .educ-section .educCard .course-works-row h4 {
   font-size: 15px;
@@ -186,6 +190,9 @@ html body .App .infoColumn .educ-section .educCard .course-works-row ul {
   font-size: 14px;
   font-family: "Poppins", sans-serif;
   transition: 0.2s ease-in-out;
+}
+html body .App .infoColumn .educ-section .educCard .course-works-row:hover .caretIcon {
+  rotate: 0deg;
 }
 html body .App .infoColumn .educ-section .educCard .course-works-row:hover ul {
   max-height: 500px;
