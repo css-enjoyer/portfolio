@@ -248,6 +248,9 @@ html body .App .infoColumn .proj-section .projCard .flairs div {
     width: 100%;
     height: 100%;
   }
+  html body .App .infoColumn .educCard h4 {
+    text-align: left;
+  }
   html body .App .infoColumn .projCard {
     display: flex;
     flex-direction: column;

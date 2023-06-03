@@ -266,6 +266,11 @@ html {
                     padding: 50px;
                     width: 100%;
                     height: 100%;
+                    .educCard {
+                        h4 {
+                            text-align: left;
+                        }
+                    }
                     .projCard {
                         display: flex;
                         flex-direction: column;
