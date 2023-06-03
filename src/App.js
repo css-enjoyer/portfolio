@@ -33,3 +33,14 @@ function App() {
 }
 
 export default App;
+
+// To Add:
+// - Relevant Course Works
+// - Add images/logos/icons/emojis/color for more personality
+// - Better intro on bio column
+// - List of Technologies
+// - Graduation/School Year Countdown
+// - Create an optional button to show ALL projects made
+// - Idle video display on bio bio column
+// - Create interesting and impressive projects
+// - Start contributing to open source projects

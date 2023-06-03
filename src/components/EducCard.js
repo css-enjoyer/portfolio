@@ -9,6 +9,8 @@ function EducCard({date, title, subtitle, titlelink, subtitlelink, img}) {
         <div id="main-col">
             <a href={titlelink} target="_blank">{title}</a><br/>
             <a href={subtitlelink}>{subtitle}</a>
+            <h4>Relevant Courseworks:</h4>
+            <p></p>
         </div>
     </div>
     );

@@ -26,7 +26,7 @@ function ProjColumn() {
 		</div>
 		<div className="margin" id="educ-margin"></div>
 		<div ref={educRef} className={`${"section educ-section"} + ${educIsVisible ? "sectionVisible" : ""}`} id="educ-section">
-			<h1>University Education</h1>
+			<h1>Education & Experiences</h1>
 			<EducCard date="2021 - Present" 
 					title="University of Santo Tomas" 
 					subtitle="BS Computer Science"
