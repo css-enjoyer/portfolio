@@ -1,5 +1,8 @@
 
-function EducCard({date, title, subtitle, titlelink, subtitlelink, img}) {
+function EducCard({date, title, subtitle, titlelink, subtitlelink, img, ... courseworks}) {
+    const courseWorks = Object.entries(courseworks).map(([key, value]) => (
+        <li key={key}> {value}</li>
+    ));
     return (
     <div className="educCard">
         <div id="timeline-col">
@@ -10,7 +13,9 @@ function EducCard({date, title, subtitle, titlelink, subtitlelink, img}) {
             <a href={titlelink} target="_blank">{title}</a><br/>
             <a href={subtitlelink}>{subtitle}</a>
             <h4>Relevant Courseworks:</h4>
-            <p></p>
+            <ul>
+                {courseWorks}
+            </ul>
         </div>
     </div>
     );

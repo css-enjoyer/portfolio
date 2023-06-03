@@ -31,7 +31,16 @@ function ProjColumn() {
 					title="University of Santo Tomas" 
 					subtitle="BS Computer Science"
 					titlelink="https://www.ust.edu.ph/"
-					subtitlelink="https://www.ust.edu.ph/academics/programs/bachelor-of-science-in-computer-science/"/>
+					subtitlelink="https://www.ust.edu.ph/academics/programs/bachelor-of-science-in-computer-science/"
+					courseWork1="Data Structures and Algorithms"
+					courseWork2="Fundamentals of Programming (OOP)"
+					courseWork3="Human Computer Interaction"
+					courseWork4="Applications Development Front-End and Back-End"
+					courseWork5="Information Management (Database)"
+					courseWork6="Theory of Automata"
+					courseWork7="Design and Analysis of Algorithms"
+					courseWork8="Introduction to Artificial Intelligence"
+					courseWork9="Computer Architecture and Organization" />
 		</div>
 		<div className="margin" id="proj-margin"></div>
 		<div ref={projRef} className={`${"proj-section section"} + ${projIsVisible ? "sectionVisible" : ""}`} id="proj-section">
