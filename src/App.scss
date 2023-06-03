@@ -53,7 +53,7 @@ html {
     scroll-behavior: smooth !important;
     body {
         background: var(--purple);
-        min-height: 100%;
+        height: 100%;
         .App {
             background: radial-gradient(circle farthest-side at var(--x) var(--y), 
                                         var(--purple) 0%, 
@@ -73,7 +73,7 @@ html {
                 h1 {
                     font-size: 50px;
                     line-height: 50px;
-                    margin-bottom: 20px;
+                    margin-bottom: 5px;
                 }
                 h4 {
                     font-size: 16px;
@@ -174,6 +174,17 @@ html {
                 }
                 .tech-section {
                     .techCard {
+                        margin: 10px 0;
+                        padding: 20px 0;
+                        display: flex;
+                        justify-content: space-evenly;
+                        flex-wrap: wrap;
+                        gap: 10px;
+                        .techBox {
+                            border: 1px solid white;
+                            height: 70px;
+                            width: 70px;
+                        }
                     }
                 }
                 .educ-section {
@@ -207,6 +218,7 @@ html {
                                     rotate: 0deg;
                                 }
                                 ul {
+                                    
                                     max-height: 500px;
                                     opacity: 1;
                                 }

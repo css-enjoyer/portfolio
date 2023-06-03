@@ -4,7 +4,7 @@ function TechCard({...techs}) {
         <div className="techBox">{value}</div>
     ));
     return (
-    <div className="techCard cards">
+    <div className="techCard">
         {techProps}
     </div>
     );

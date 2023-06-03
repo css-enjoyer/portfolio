@@ -77,6 +77,7 @@ function ProjColumn() {
 					courseWork8="Introduction to Artificial Intelligence"
 					courseWork9="Computer Architecture and Organization" />
 		</div>
+		<div className="margin"></div>
 	</div>
   	);
 }
