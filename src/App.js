@@ -37,6 +37,7 @@ export default App;
 // To Add:
 // - Relevant Course Works
 // -- Add a hover indicator
+// -- Add a link indicator
 // - Add more secondary colors (green)
 // - Make fonts uniform
 // -- For links

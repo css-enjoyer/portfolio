@@ -232,9 +232,11 @@ html body .App .infoColumn .proj-section .projCard .flairs {
 html body .App .infoColumn .proj-section .projCard .flairs div {
   font-size: 12px;
   background-color: var(--flair);
-  color: var(--green);
   padding: 2px 8px;
   border-radius: 12px;
+}
+html body .App .infoColumn .proj-section .projCard .flairs div p {
+  color: var(--green);
 }
 
 @media screen and (max-width: 767px) {
@@ -285,7 +287,7 @@ html body .App .infoColumn .proj-section .projCard .flairs div {
   0% {
     color: var(--green);
     text-shadow: 4px 0px 2px var(--green);
-    right: -10px;
+    right: -15px;
     opacity: 0%;
   }
   100% {
