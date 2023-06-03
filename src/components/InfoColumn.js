@@ -5,6 +5,16 @@ import TechCard from './TechCard';
 import ticImage from '.././images/tictactoe.jpeg';
 import hanImage from '.././images/hanover.png';
 
+import javaImg from '.././images/technologies/java.png';
+import htmlImg from '.././images/technologies/html-5.png';
+import cssImg from '.././images/technologies/css-3.png';
+import jsImg from '.././images/technologies/js.png';
+import sassImg from '.././images/technologies/sass.png';
+import sqlImg from '.././images/technologies/sql.png';
+import phpImg from '.././images/technologies/php.png';
+import nodeImg from '.././images/technologies/node.png';
+import reactImg from '.././images/technologies/react.png';
+
 import { useInView } from 'react-intersection-observer';
 
 function ProjColumn() {
@@ -32,7 +42,15 @@ function ProjColumn() {
 		<div className="margin" id="tech-margin"></div>
 		<div className="tech-section section" id="tech-section">
 			<h1>Technologies</h1>
-			<TechCard t0="Java" t1="HTML" t2="CSS" t3="JavaScript" t4="SASS" t5="MySQL" t6="PHP" t7="Node.js" t8="React.js" />
+			<TechCard image0={javaImg}
+						imag1e={htmlImg}
+						image2={cssImg}
+						image3={jsImg}
+						image4={sassImg}
+						image5={sqlImg}
+						image6={phpImg}
+						image7={nodeImg}
+						image8={reactImg} />
 		</div>
 		{/* =================== PROJECT SECTION =================== */}
 

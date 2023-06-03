@@ -178,7 +178,8 @@ html body .App .infoColumn .tech-section .techCard {
   gap: 10px;
 }
 html body .App .infoColumn .tech-section .techCard .techBox {
-  border: 1px solid white;
+  box-shadow: 0px 5px 5px var(--black);
+  border-radius: 10px;
   height: 70px;
   width: 70px;
 }

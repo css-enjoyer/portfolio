@@ -1,7 +1,7 @@
 
 function TechCard({...techs}) {
     const techProps = Object.entries(techs).map(([key, value]) => (
-        <div className="techBox">{value}</div>
+        <img src={value} className="techBox" />
     ));
     return (
     <div className="techCard">
