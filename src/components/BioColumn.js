@@ -10,8 +10,9 @@ function BioColumn() {
 		
 		<div className="sec-list">
 			<a href="#about-margin">About Me</a>
-			<a href="#educ-margin">Education</a>
+			<a href="#tech-margin">Technologies</a>
 			<a href="#proj-margin">Projects</a>
+			<a href="#educ-margin">Education</a>
 		</div>
 		
 		<div className="soc-list">

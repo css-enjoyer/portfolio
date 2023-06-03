@@ -36,18 +36,18 @@ export default App;
 
 // To Add:
 // - Relevant Course Works == DONE
-// -- Add a hover indicator
-// -- Add a link indicator
-// - Add more secondary colors (green)
-// - Make fonts uniform
-// -- For links
-// -- For headers
-// -- For descriptions
-// -- For lists
-// -- For buttons
+// -- Add a hover indicator == DONE
+// -- Add a link indicator == DONE
+// - Add more secondary colors (green) == DONE
+// - Make fonts uniform == DONE
+// -- For links == DONE
+// -- For headers == DONE
+// -- For descriptions == DONE
+// -- For lists == DONE
+// -- For buttons == DONE
+// - List of Technologies
 // - Add images/logos/icons/emojis/color for more personality
 // - Better intro on bio column
-// - List of Technologies
 // - Graduation/School Year Countdown
 // - Create an optional button to show ALL projects made
 // - Idle video display on bio bio column

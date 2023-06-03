@@ -85,10 +85,10 @@ html body .App .bioColumn h4 {
 html body .App .bioColumn .sec-list {
   display: flex;
   flex-direction: column;
-  margin: 30px 0;
+  margin: 20px 0;
   font-family: "Poppins", sans-serif;
   font-weight: 400;
-  gap: 20px;
+  gap: 10px;
   font-size: 15px;
   transition: 0.2s ease-in-out;
 }
