@@ -36,6 +36,14 @@ export default App;
 
 // To Add:
 // - Relevant Course Works
+// -- Add a hover indicator
+// - Add more secondary colors (green)
+// - Make fonts uniform
+// -- For links
+// -- For headers
+// -- For descriptions
+// -- For lists
+// -- For buttons
 // - Add images/logos/icons/emojis/color for more personality
 // - Better intro on bio column
 // - List of Technologies
