@@ -1,7 +1,10 @@
 import Flair from "./Flair";
 import linkIcon from "../images/arrow-up-right-from-square-solid.svg";
 
-function ProjCard({title, subtitle, titlelink, img, f1, f2, f3, f4}) {
+function ProjCard({title, subtitle, titlelink, img, ... flairs}) {
+    const flairProps = Object.entries(flairs).map(([key, value]) => (
+        <Flair text={value} />
+    ));
     return (
     <div className="projCard">
         <div id="timeline-col">
@@ -11,10 +14,7 @@ function ProjCard({title, subtitle, titlelink, img, f1, f2, f3, f4}) {
             <a href={titlelink} target="_blank">{title}</a><img class="linkIcon" src={linkIcon}></img><br/>
             <p>{subtitle}</p>
             <div className="flairs">
-                <Flair text={f1}/>
-                <Flair text={f2}/>
-                <Flair text={f3}/>
-                <Flair text={f4}/>
+                {flairProps}
             </div>
         </div>
     </div>
