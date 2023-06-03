@@ -151,6 +151,20 @@ html body .App .infoColumn .educ-section .educCard:hover {
   background: linear-gradient(145deg, #2a1131, #230e29);
   box-shadow: 5px 5px 18px rgba(16, 6, 18, 0.8039215686), -5px -5px 18px #3d1a48;
 }
+html body .App .infoColumn .educ-section .educCard:hover .linkIcon {
+  transition: 0.06s ease-in-out;
+  right: -1px;
+  top: -1px;
+  filter: invert(100) brightness(100%);
+}
+html body .App .infoColumn .educ-section .educCard .linkIcon {
+  height: 15px;
+  width: 15px;
+  filter: invert(100) brightness(70%);
+  margin-left: 6px;
+  position: relative;
+  top: 1px;
+}
 html body .App .infoColumn .educ-section .educCard .course-works-row {
   margin-top: 10px;
 }
