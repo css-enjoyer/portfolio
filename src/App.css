@@ -18,12 +18,14 @@
 }
 
 h1 {
+  min-width: 350px;
   font-family: var(--header-text);
   font-weight: 400;
+  border: 1px solid red;
 }
 h1 span {
   font-weight: 700;
-  word-break: keep-all;
+  white-space: nowrap;
 }
 
 h4, p, a {
