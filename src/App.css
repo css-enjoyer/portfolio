@@ -51,20 +51,19 @@ a {
 }
 
 html {
-  height: 100%;
   scroll-behavior: smooth !important;
 }
 html body {
   background: var(--purple);
-  height: 100%;
 }
 html body .App {
   background: radial-gradient(circle farthest-side at var(--x) var(--y), var(--purple) 0%, var(--black-purple) 100%);
   background-repeat: no-repeat;
   background-attachment: fixed;
-  height: 100%;
+  min-height: 100%;
   width: 100%;
   display: grid;
+  overflow-y: hidden;
 }
 html body .App .bioColumn {
   width: 40%;

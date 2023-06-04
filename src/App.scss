@@ -49,20 +49,19 @@ a {
 }
 
 html {
-    height: 100%;
     scroll-behavior: smooth !important;
     body {
         background: var(--purple);
-        height: 100%;
         .App {
             background: radial-gradient(circle farthest-side at var(--x) var(--y), 
                                         var(--purple) 0%, 
                                         var(--black-purple) 100%);
             background-repeat: no-repeat;
             background-attachment: fixed;                      
-            height: 100%;
+            min-height: 100%;
             width: 100%;
             display: grid;
+            overflow-y: hidden;
             // ----------------------------- LEFT COLUMN -----------------------------
             .bioColumn {
                 width: 40%;
@@ -220,7 +219,6 @@ html {
                                     rotate: 0deg;
                                 }
                                 ul {
-                                    
                                     max-height: 500px;
                                     opacity: 1;
                                 }
