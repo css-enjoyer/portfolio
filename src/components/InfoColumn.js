@@ -2,7 +2,8 @@ import EducCard from './EducCard';
 import ProjCard from './ProjCard';
 import TechCard from './TechCard';
 
-import ticImage from '.././images/tictactoe.jpeg';
+// import ticImage from '.././images/tictactoe.jpeg';
+import enrollSysImage from '.././images/enrollsys.png';
 import hanImage from '.././images/hanover.png';
 
 import javaImg from '.././images/technologies/java.png';
@@ -59,14 +60,13 @@ function ProjColumn() {
 		<div className="margin" id="proj-margin"></div>
 		<div ref={projRef} className={`${"proj-section section"} + ${projIsVisible ? "sectionVisible" : ""}`} id="proj-section">
 			<h1 ref={projHeadRef} className={`${projHeadIsVisible ? "headerVisible" : ""}`}>Projects</h1>
-			<ProjCard img={ticImage}
-					title="Tic-Tac-Toe"
-					subtitle="Created with vanilla JavaScript as part of the Odin Project curriculum that aims teach
-							the fundamentals of HTML, JavaScript and CSS."
+			<ProjCard img={enrollSysImage}
+					title="College Enrollment System"
+					subtitle="A student enrollment management system created with JavaScript and PHP which focuses on database add, update, and deletion. Submitted as my final academic project as a freshman."
 					titlelink="https://css-enjoyer.github.io/odin_tictactoe/"
 					f1="HTML"
-					f2="CSS"
-					f3="JavaScript"/>
+					f2="JavaScript"
+					f3="PHP"/>
 			<ProjCard img={hanImage}
 					title="Hanover Store"
 					subtitle="An online sneaker retail store created with Java Servlets and JSP's with a Derby Database made for my final academic project as a sophomore."
@@ -74,7 +74,8 @@ function ProjColumn() {
 					f1="Java"
 					f2="Servlets"
 					f3="JSP"
-					f4="Derby"/>
+					f4="MySQL"
+					f5="Derby"/>
 		</div>
 
 		{/* =================== EDUCATION SECTION =================== */}
