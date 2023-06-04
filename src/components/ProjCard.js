@@ -11,7 +11,7 @@ function ProjCard({title, subtitle, titlelink, img, ... flairs}) {
             <img className="thumbnail" src={img}></img>
         </div>
         <div id="main-col">
-            <a href={titlelink} target="_blank">{title}</a><img class="linkIcon" src={linkIcon}></img><br/>
+            <div><a href={titlelink} target="_blank">{title}</a><img class="linkIcon" src={linkIcon}></img></div><br/>
             <p>{subtitle}</p>
             <div className="flairs">
                 {flairProps}

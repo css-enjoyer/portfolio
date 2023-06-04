@@ -18,7 +18,6 @@
 }
 
 h1 {
-  min-width: 350px;
   font-family: var(--header-text);
   font-weight: 400;
 }
@@ -73,6 +72,7 @@ html body .App .bioColumn {
   color: var(--white);
 }
 html body .App .bioColumn h1 {
+  min-width: 350px;
   font-size: 50px;
   line-height: 50px;
   margin-bottom: 5px;
@@ -264,6 +264,7 @@ html body .App .infoColumn .proj-section .projCard .flairs div p {
   }
   html body .App h1, html body .App h4 {
     text-align: center;
+    min-width: unset !important;
   }
   html body .App .bioColumn {
     padding: 50px;
@@ -276,7 +277,7 @@ html body .App .infoColumn .proj-section .projCard .flairs div p {
     margin-left: 50px !important;
   }
   html body .App .infoColumn {
-    padding: 50px;
+    padding: 30px;
     width: 100%;
     height: 100%;
   }
@@ -288,10 +289,19 @@ html body .App .infoColumn .proj-section .projCard .flairs div p {
     flex-direction: column;
     align-items: center;
   }
+  html body .App .infoColumn .projCard #main-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  html body .App .infoColumn .projCard #main-col p {
+    text-align: center;
+  }
   html body .App .infoColumn .projCard .thumbnail {
     width: 100% !important;
     min-width: 200px !important;
     height: 100%;
+    margin-bottom: -15px;
   }
 }
 .sectionVisible {
