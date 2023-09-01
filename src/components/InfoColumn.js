@@ -17,6 +17,8 @@ import sqlImg from '.././images/technologies/sql.png';
 import phpImg from '.././images/technologies/php.png';
 import nodeImg from '.././images/technologies/node.png';
 import reactImg from '.././images/technologies/react.png';
+import expressImg from '.././images/technologies/express.png';
+import mongoImg from '.././images/technologies/mongodb.png';
 
 import { useInView } from 'react-intersection-observer';
 
@@ -54,8 +56,10 @@ function ProjColumn() {
 						image4={sassImg}
 						image5={sqlImg}
 						image6={phpImg}
-						image7={nodeImg}
-						image8={reactImg} />
+						image10={mongoImg}
+						image8={expressImg}
+						image9={reactImg} 
+						image7={nodeImg} />
 		</div>
 		{/* =================== PROJECT SECTION =================== */}
 
