@@ -45,7 +45,7 @@ export default App;
 // -- For descriptions == DONE
 // -- For lists == DONE
 // -- For buttons == DONE
-// - List of Technologies
+// - List of Technologies == DONE
 // - Add images/logos/icons/emojis/color for more personality
 // - Better intro on bio column
 // - Graduation/School Year Countdown

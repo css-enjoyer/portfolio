@@ -3,6 +3,7 @@ import ProjCard from './ProjCard';
 import TechCard from './TechCard';
 
 // import ticImage from '.././images/tictactoe.jpeg';
+import dotaiImage from '.././images/dotai.png';
 import enrollSysImage from '.././images/enrollsys.png';
 import hanImage from '.././images/hanover.png';
 
@@ -60,13 +61,30 @@ function ProjColumn() {
 		<div className="margin" id="proj-margin"></div>
 		<div ref={projRef} className={`${"proj-section section"} + ${projIsVisible ? "sectionVisible" : ""}`} id="proj-section">
 			<h1 ref={projHeadRef} className={`${projHeadIsVisible ? "headerVisible" : ""}`}>Projects</h1>
+			<ProjCard img={dotaiImage}
+					title="DotAI - Dota 2 Drafter"
+					subtitle="An online tool that filters heroes based on selected categories to streamline drafting phases, created using the MERN stack and the OpenDotaAPI, created as a passion project for both Dota 2 and Web Development"
+					titlelink="https://dotaidraft.netlify.app/"
+					f1="MongoDB"
+					f2="Express"
+					f3="React.JS"
+					f4="Node.JS"
+					f12="SASS"
+					f5="OpenDotaAPI"
+					f6="REST API"
+					f7="Render"
+					f8="Netlify"
+					f9="Toastify"
+					f10="Framer Motion"
+					f11="Axios"/>
 			<ProjCard img={enrollSysImage}
 					title="College Enrollment System"
 					subtitle="A student enrollment management system created with JavaScript and PHP which focuses on database add, update, and deletion. Submitted as my final academic project as a freshman."
 					titlelink="https://css-enjoyer.github.io/odin_tictactoe/"
 					f1="HTML"
 					f2="JavaScript"
-					f3="PHP"/>
+					f3="PHP"
+					f4="CSS"/>
 			<ProjCard img={hanImage}
 					title="Hanover Store"
 					subtitle="An online sneaker retail store created with Java Servlets and JSP's with a Derby Database made for my final academic project as a sophomore."

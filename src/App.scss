@@ -259,6 +259,8 @@ html {
                         .flairs {
                             margin-top: 5px;
                             display: flex;
+                            flex-wrap: wrap;
+                            border: 1px solid red;
                             gap: 10px;
                             div {
                                 font-size: 12px;
