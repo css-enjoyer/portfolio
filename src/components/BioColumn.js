@@ -21,7 +21,7 @@ function BioColumn() {
 			<a href="https://github.com/css-enjoyer" target="_blank"><img src={liImage}></img></a>
 		</div>
 	</div>
-  	);
+  	); 
 }
 
 export default BioColumn;
