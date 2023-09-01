@@ -4,6 +4,7 @@ import TechCard from './TechCard';
 
 // import ticImage from '.././images/tictactoe.jpeg';
 import dotaiImage from '.././images/dotai.png';
+import dotaiImage2 from '.././images/dotai2.png';
 import enrollSysImage from '.././images/enrollsys.png';
 import hanImage from '.././images/hanover.png';
 
