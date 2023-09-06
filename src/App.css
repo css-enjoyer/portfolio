@@ -137,8 +137,12 @@ html body .App .bioColumn .soc-list a img {
   cursor: pointer;
 }
 html body .App .logo {
-  border: 1px solid red;
   position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 55px;
+  width: 55px;
+  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
 }
 html body .App .infoColumn {
   width: 60%;
