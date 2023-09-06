@@ -136,6 +136,10 @@ html body .App .bioColumn .soc-list a img {
   filter: invert(100%) brightness(75%);
   cursor: pointer;
 }
+html body .App .logo {
+  border: 1px solid red;
+  position: absolute;
+}
 html body .App .infoColumn {
   width: 60%;
   height: 100%;

@@ -1,6 +1,7 @@
 import igImage from "../images/instagram.svg";
 import ghImage from "../images/github.svg";
 import liImage from "../images/linkedin.svg";
+import logo from "../images/favicons/IRLOGO-WHITE.png";
 
 function BioColumn() {
   	return (
@@ -8,6 +9,10 @@ function BioColumn() {
 		<h1>Hey, my name is <span>Isaac Reyes</span></h1>
 		<h4>I study <span>Computer Science</span> at the <br />Univeristy of Santo Tomas, Philippines</h4>
 		
+		<div className="logo">
+			<img src={logo}></img>
+		</div>
+
 		<div className="sec-list">
 			<a href="#about-margin">About Me</a>
 			<a href="#tech-margin">Technologies</a>
