@@ -4,7 +4,8 @@ import TechCard from './TechCard';
 
 // import ticImage from '.././images/tictactoe.jpeg';
 import dotaiImage from '.././images/dotai.png';
-import dotaiImage2 from '.././images/dotai2.png';
+import drrsImage from '.././images/drrs.png';
+// import dotaiImage2 from '.././images/dotai2.png';
 import enrollSysImage from '.././images/enrollsys.png';
 import hanImage from '.././images/hanover.png';
 
@@ -66,39 +67,50 @@ function ProjColumn() {
 		<div className="margin" id="proj-margin"></div>
 		<div ref={projRef} className={`${"proj-section section"} + ${projIsVisible ? "sectionVisible" : ""}`} id="proj-section">
 			<h1 ref={projHeadRef} className={`${projHeadIsVisible ? "headerVisible" : ""}`}>Projects</h1>
+			<ProjCard img={drrsImage}
+					title="UST Miguel de Benavides - Discussion Room Reservation System"
+					subtitle="Software Engineering capstone for Junior Year. Real-time updates of rooms for all satellite library branches within the University of Santo Tomas Manila campus. Features automated email notifications, automated reservation cancellation, student authentication, data analytics. "
+					titlelink="https://github.com/css-enjoyer/drr-system"
+					f1="React"
+					f2="Typescript"
+					f3="Firebase"
+					f4="MUI"
+					f12="SASS"
+					f5="Google OAuth"
+					f9="Toastify"/>
 			<ProjCard img={dotaiImage}
 					title="DotAI - Dota 2 Drafter"
-					subtitle="An online tool that filters heroes based on selected categories to streamline drafting phases, created using the MERN stack and the OpenDotaAPI, created as a passion project for both Dota 2 and Web Development"
+					subtitle="An online tool that filters heroes based on selected traits to simplify drafting phases, with 2000 (seriously) lines of hand written hero categorization, created as a passion project for both Dota 2 and Web Development"
 					titlelink="https://dotaidraft.netlify.app/"
 					f1="MongoDB"
 					f2="Express"
-					f3="React.JS"
-					f4="Node.JS"
+					f3="React"
+					f4="Node"
 					f12="SASS"
 					f5="OpenDotaAPI"
-					f6="REST API"
+					f6="REST"
 					f7="Render"
 					f8="Netlify"
-					f9="Toastify"
 					f10="Framer Motion"
 					f11="Axios"/>
-			<ProjCard img={enrollSysImage}
-					title="College Enrollment System"
-					subtitle="A student enrollment management system created with JavaScript and PHP which focuses on database add, update, and deletion. Submitted as my final academic project as a freshman."
-					titlelink="https://css-enjoyer.github.io/odin_tictactoe/"
-					f1="HTML"
-					f2="JavaScript"
-					f3="PHP"
-					f4="CSS"/>
 			<ProjCard img={hanImage}
 					title="Hanover Store"
-					subtitle="An online sneaker retail store created with Java Servlets and JSP's with a Derby Database made for my final academic project as a sophomore."
+					subtitle="An online sneaker retail store created with Java Servlets and JSP's with a Derby Database made for my final academic project as a sophomore. Could be better, but proud of the challenges I overcame and concepts I learned for this project."
 					titlelink="https://github.com/css-enjoyer/HanoverStore"
 					f1="Java"
 					f2="Servlets"
 					f3="JSP"
 					f4="MySQL"
-					f5="Derby"/>
+					f5="Derby"
+					f6="CSS"/>
+			<ProjCard img={enrollSysImage}
+					title="College Enrollment System"
+					subtitle="A student enrollment management system created with JavaScript and PHP which focuses on database add, update, and deletion. Submitted as my final academic project as a freshman. Pretty scuffed, but learned alot anyway."
+					titlelink="https://css-enjoyer.github.io/odin_tictactoe/"
+					f1="HTML"
+					f2="JavaScript"
+					f3="PHP"
+					f4="CSS"/>
 		</div>
 
 		{/* =================== EDUCATION SECTION =================== */}
