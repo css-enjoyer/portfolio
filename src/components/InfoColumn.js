@@ -20,6 +20,9 @@ import nodeImg from '.././images/technologies/node.png';
 import reactImg from '.././images/technologies/react.png';
 import expressImg from '.././images/technologies/express.png';
 import mongoImg from '.././images/technologies/mongodb.png';
+import muiImg from '.././images/technologies/mui.png';
+import tsImg from '.././images/technologies/ts.png';
+import fbImg from '.././images/technologies/fb.png';
 
 import { useInView } from 'react-intersection-observer';
 
@@ -60,7 +63,13 @@ function ProjColumn() {
 						image10={mongoImg}
 						image8={expressImg}
 						image9={reactImg} 
-						image7={nodeImg} />
+						image7={nodeImg} 
+						image11={muiImg} 
+						image12={tsImg} 
+						image13={fbImg} 
+						
+						
+						/>
 		</div>
 		{/* =================== PROJECT SECTION =================== */}
 
