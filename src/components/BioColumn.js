@@ -19,9 +19,9 @@ function BioColumn() {
 		</div>
 		
 		<div className="soc-list">
-			<a href="https://www.linkedin.com/in/isaac-reyes-893572274/" target="_blank"><img src={ghImage}></img></a>
+			<a href="https://github.com/css-enjoyer" target="_blank"><img src={ghImage}></img></a>
 			<a href="https://www.instagram.com/isaac_djss/" target="_blank"><img src={igImage}></img></a>
-			<a href="https://github.com/css-enjoyer" target="_blank"><img src={liImage}></img></a>
+			<a href="https://www.linkedin.com/in/isaac-reyes-893572274/" target="_blank"><img src={liImage}></img></a>
 		</div>
 	</div>
   	); 
