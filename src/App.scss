@@ -294,7 +294,7 @@ html {
                     min-width: unset !important;
                 }
                 .bioColumn {
-                    padding: 50px;
+                    padding: 60px 50px 0 50px;
                     width: 100%;
                     height: 100%;
                     position: relative;
@@ -303,6 +303,14 @@ html {
                             left: 2px;
                             margin-left: 50px !important;
                         }
+                    }
+                    .logo {
+                        position: absolute;
+                        top: 15px;
+                        left: 45vw;
+                        height: 40px;
+                        width: 40px;
+                        filter: invert(100);
                     }
                 }
                 .infoColumn {
