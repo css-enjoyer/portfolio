@@ -133,14 +133,20 @@ function ProjColumn() {
 					titlelink="https://www.ust.edu.ph/"
 					subtitlelink="https://www.ust.edu.ph/academics/programs/bachelor-of-science-in-computer-science/"
 					courseWork1="Data Structures and Algorithms"
-					courseWork2="Fundamentals of Programming (OOP)"
+					courseWork2="Object Oriented Programming"
 					courseWork3="Human Computer Interaction"
 					courseWork4="Applications Development Front-End and Back-End"
-					courseWork5="Information Management (Database)"
+					courseWork5="Database Management Systems"
 					courseWork6="Theory of Automata"
 					courseWork7="Design and Analysis of Algorithms"
-					courseWork8="Introduction to Artificial Intelligence"
-					courseWork9="Computer Architecture and Organization" />
+					courseWork8="Artificial Intelligence"
+					courseWork9="Computer Architecture and Organization" 
+					courseWork10="Full-stack Web Development" 
+					courseWork11="Mobile Development" 
+					courseWork12="Software Engineering" 
+					courseWork13="Data Communications & Networking" 
+					courseWork14="Natural Language Processing" 
+					/>
 		</div>
 		<div className="margin"></div>
 	</div>
