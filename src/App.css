@@ -142,7 +142,6 @@ html body .App .logo {
   left: 20px;
   height: 55px;
   width: 55px;
-  box-shadow: 0 0 5px 5px rgba(0, 0, 0, 0.5);
 }
 html body .App .infoColumn {
   width: 60%;
