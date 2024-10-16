@@ -1,0 +1,342 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Poppins:wght@300;700&display=swap");
+:root {
+  --black: #0A0C08;
+  --white: #E6FAFC;
+  --font-color: #1a1a1a;
+  --primary-color: #ebe3da;
+  --secondary-color: #3eb5f0;
+  --tertiary-color: #d4c8ba;
+  --quarternary-color: #2970b3;
+  --grey: #c0cfd1;
+  --green: #43F939;
+  --flair: #3eb5f085;
+  --purple: #27102e;
+  --black-purple: #100514;
+  --header-text: "PT Serif", serif;
+  --body-text: "Poppins", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  font-family: var(--header-text);
+  font-weight: 400;
+  color: var(--font-color);
+}
+h1 span {
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+h4, p, a {
+  font-family: var(--body-text);
+  font-weight: 400;
+  color: var(--font-color);
+  text-decoration: none;
+}
+h4 span, p span, a span {
+  font-weight: 700;
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+html body {
+  background: var(--purple);
+}
+html body .App {
+  background: radial-gradient(circle farthest-side at var(--x) var(--y), var(--primary-color) 0%, var(--tertiary-color) 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100%;
+  width: 100%;
+  display: grid;
+  overflow-y: hidden;
+}
+html body .App .bioColumn {
+  width: 40%;
+  height: 100%;
+  position: fixed;
+  padding: 100px 50px 100px 100px;
+}
+html body .App .bioColumn h1 {
+  min-width: 350px;
+  font-size: 50px;
+  line-height: 50px;
+  margin-bottom: 5px;
+}
+html body .App .bioColumn .sec-list {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  gap: 10px;
+  font-size: 15px;
+  transition: 0.2s ease-in-out;
+}
+html body .App .bioColumn .sec-list a {
+  text-decoration: none;
+  width: auto;
+  padding-left: 30px;
+  transition: 0.2s ease-in-out;
+}
+html body .App .bioColumn .sec-list a::after {
+  content: "";
+  background-color: var(--secondary-color);
+  position: absolute;
+  left: 2px;
+  margin-left: 100px;
+  margin-top: 0;
+  width: 2px;
+  height: 23px;
+  transition: 0.2s ease-in-out;
+}
+html body .App .bioColumn .sec-list a:hover::after {
+  margin-top: 10px;
+  width: 60px;
+  height: 2px;
+}
+html body .App .bioColumn .sec-list:hover a {
+  opacity: 0.4;
+  transition: 0.2s ease-in-out;
+}
+html body .App .bioColumn .sec-list:hover a:hover {
+  font-weight: 700;
+  opacity: 1;
+  color: var(--secondary-color);
+  padding-left: 80px;
+}
+html body .App .bioColumn .soc-list {
+  display: flex;
+  gap: 50px;
+}
+html body .App .bioColumn .soc-list a {
+  height: 30px;
+  width: 30px;
+}
+html body .App .bioColumn .soc-list a img {
+  cursor: pointer;
+}
+html body .App .logo {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  height: 55px;
+  width: 55px;
+  filter: invert(100);
+}
+html body .App .infoColumn {
+  width: 60%;
+  height: 100%;
+  margin-left: auto;
+  padding: 0 100px 100px 100px;
+}
+html body .App .infoColumn .margin {
+  height: 100px;
+}
+html body .App .infoColumn h1::before {
+  content: "";
+  background-color: var(--secondary-color);
+  position: relative;
+  display: block;
+  z-index: -1;
+  width: 100%;
+  height: 3px;
+  top: 40px;
+  left: -2px;
+}
+html body .App .infoColumn .cards {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  transition: ease-in-out 0.2s;
+  margin: 10px 0;
+}
+html body .App .infoColumn .cards:hover {
+  border-radius: 17px;
+  box-shadow: 5px 5px 17px #dbd3cb, -5px -5px 17px #eae3d9;
+}
+html body .App .infoColumn .tech-section .techCard {
+  margin: 10px 0;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+html body .App .infoColumn .tech-section .techCard .techBox {
+  box-shadow: 5px 5px 17px #dbd3cb, -5px -5px 17px #eae3d9;
+  border-radius: 10px;
+  height: 70px;
+  width: 70px;
+}
+html body .App .infoColumn .educ-section .educCard .icon {
+  height: 15px;
+  width: 15px;
+  filter: invert(0);
+  margin-left: 6px;
+  position: relative;
+  top: 1px;
+}
+html body .App .infoColumn .educ-section .educCard:hover .linkIcon {
+  transition: 0.06s ease-in-out;
+  right: -1px;
+  top: -1px;
+}
+html body .App .infoColumn .educ-section .educCard .course-works-row {
+  margin-top: 10px;
+}
+html body .App .infoColumn .educ-section .educCard .course-works-row .caretIcon {
+  rotate: -180deg;
+  transition: 0.3s ease-in-out;
+}
+html body .App .infoColumn .educ-section .educCard .course-works-row h4 {
+  font-size: 15px;
+}
+html body .App .infoColumn .educ-section .educCard .course-works-row ul {
+  max-height: 0px;
+  opacity: 0;
+  font-size: 14px;
+  font-family: "Poppins", sans-serif;
+  transition: 0.2s ease-in-out;
+}
+html body .App .infoColumn .educ-section .educCard .course-works-row:hover .caretIcon {
+  rotate: 0deg;
+}
+html body .App .infoColumn .educ-section .educCard .course-works-row:hover ul {
+  max-height: 500px;
+  opacity: 1;
+}
+html body .App .infoColumn .proj-section .projCard a {
+  font-family: "Poppins", sans-serif;
+  text-decoration: none;
+}
+html body .App .infoColumn .proj-section .projCard:hover .linkIcon {
+  transition: 0.06s ease-in-out;
+  right: -1px;
+  top: -1px;
+}
+html body .App .infoColumn .proj-section .projCard .thumbnail {
+  border: 2px solid rgba(192, 207, 209, 0.3294117647);
+  border-radius: 4px;
+  width: 100px;
+  height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+html body .App .infoColumn .proj-section .projCard .linkIcon {
+  height: 15px;
+  width: 15px;
+  margin-left: 6px;
+  position: relative;
+  top: 1px;
+}
+html body .App .infoColumn .proj-section .projCard .flairs {
+  margin-top: 5px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+html body .App .infoColumn .proj-section .projCard .flairs div {
+  font-size: 12px;
+  background-color: var(--flair);
+  padding: 2px 8px;
+  border-radius: 12px;
+}
+@media screen and (max-width: 767px) {
+  html body .App {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  html body .App h1, html body .App h4 {
+    text-align: center;
+    min-width: unset !important;
+  }
+  html body .App .bioColumn {
+    padding: 60px 50px 0 50px;
+    width: 100%;
+    height: 100%;
+    position: relative;
+  }
+  html body .App .bioColumn a::after {
+    left: 2px;
+    margin-left: 50px !important;
+  }
+  html body .App .bioColumn .logo {
+    position: absolute;
+    top: 15px;
+    left: 45vw;
+    height: 40px;
+    width: 40px;
+    filter: invert(100);
+  }
+  html body .App .infoColumn {
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+  }
+  html body .App .infoColumn .educCard h4 {
+    text-align: left;
+  }
+  html body .App .infoColumn .projCard {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  html body .App .infoColumn .projCard #main-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  html body .App .infoColumn .projCard #main-col p {
+    text-align: center;
+  }
+  html body .App .infoColumn .projCard .thumbnail {
+    width: 100% !important;
+    min-width: 200px !important;
+    height: 100%;
+    margin-bottom: -15px;
+  }
+}
+.sectionVisible {
+  animation: fade-in 0.5s ease-in-out;
+  position: relative;
+}
+
+@keyframes fade-in {
+  0% {
+    color: var(--secondary-color);
+    text-shadow: 4px 0px 2px var(--secondary-color);
+    right: -15px;
+    opacity: 0%;
+  }
+  100% {
+    right: 0;
+    opacity: 100%;
+  }
+}
+.headerVisible {
+  animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-right both;
+}
+
+@keyframes wipe-in-right {
+  0% {
+    -webkit-clip-path: inset(0 100% 0 0);
+            clip-path: inset(0 100% 0 0);
+  }
+  50% {
+    text-shadow: none;
+  }
+  100% {
+    text-shadow: 0px 1px 1px black;
+    -webkit-clip-path: inset(0 0 0 0);
+            clip-path: inset(0 0 0 0);
+  }
+}/*# sourceMappingURL=App.css.map */
