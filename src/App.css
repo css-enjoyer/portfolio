@@ -2,9 +2,14 @@
 :root {
   --black: #0A0C08;
   --white: #E6FAFC;
+  --font-color: #1a1a1a;
+  --primary-color: #ebe3da;
+  --secondary-color: #3eb5f0;
+  --tertiary-color: #d4c8ba;
+  --quarternary-color: #2970b3;
   --grey: #c0cfd1;
   --green: #43F939;
-  --flair: #43f93934;
+  --flair: #3eb5f085;
   --purple: #27102e;
   --black-purple: #100514;
   --header-text: "PT Serif", serif;
@@ -20,6 +25,7 @@
 h1 {
   font-family: var(--header-text);
   font-weight: 400;
+  color: var(--font-color);
 }
 h1 span {
   font-weight: 700;
@@ -29,24 +35,11 @@ h1 span {
 h4, p, a {
   font-family: var(--body-text);
   font-weight: 400;
-  color: var(--grey);
+  color: var(--font-color);
   text-decoration: none;
 }
 h4 span, p span, a span {
   font-weight: 700;
-}
-
-a {
-  color: white;
-}
-
-.icon {
-  height: 15px;
-  width: 15px;
-  filter: invert(100) brightness(70%);
-  margin-left: 6px;
-  position: relative;
-  top: 1px;
 }
 
 html {
@@ -56,7 +49,7 @@ html body {
   background: var(--purple);
 }
 html body .App {
-  background: radial-gradient(circle farthest-side at var(--x) var(--y), var(--purple) 0%, var(--black-purple) 100%);
+  background: radial-gradient(circle farthest-side at var(--x) var(--y), var(--primary-color) 0%, var(--tertiary-color) 100%);
   background-repeat: no-repeat;
   background-attachment: fixed;
   min-height: 100%;
@@ -69,17 +62,12 @@ html body .App .bioColumn {
   height: 100%;
   position: fixed;
   padding: 100px 50px 100px 100px;
-  color: var(--white);
 }
 html body .App .bioColumn h1 {
   min-width: 350px;
   font-size: 50px;
   line-height: 50px;
   margin-bottom: 5px;
-}
-html body .App .bioColumn h4 {
-  font-size: 16px;
-  color: var(--grey);
 }
 html body .App .bioColumn .sec-list {
   display: flex;
@@ -93,14 +81,13 @@ html body .App .bioColumn .sec-list {
 }
 html body .App .bioColumn .sec-list a {
   text-decoration: none;
-  color: var(--grey);
   width: auto;
   padding-left: 30px;
   transition: 0.2s ease-in-out;
 }
 html body .App .bioColumn .sec-list a::after {
   content: "";
-  background-color: var(--green);
+  background-color: var(--secondary-color);
   position: absolute;
   left: 2px;
   margin-left: 100px;
@@ -115,13 +102,13 @@ html body .App .bioColumn .sec-list a:hover::after {
   height: 2px;
 }
 html body .App .bioColumn .sec-list:hover a {
-  opacity: 0.2;
+  opacity: 0.4;
   transition: 0.2s ease-in-out;
 }
 html body .App .bioColumn .sec-list:hover a:hover {
   font-weight: 700;
   opacity: 1;
-  color: var(--green);
+  color: var(--secondary-color);
   padding-left: 80px;
 }
 html body .App .bioColumn .soc-list {
@@ -133,7 +120,6 @@ html body .App .bioColumn .soc-list a {
   width: 30px;
 }
 html body .App .bioColumn .soc-list a img {
-  filter: invert(100%) brightness(75%);
   cursor: pointer;
 }
 html body .App .logo {
@@ -142,20 +128,20 @@ html body .App .logo {
   left: 20px;
   height: 55px;
   width: 55px;
+  filter: invert(100);
 }
 html body .App .infoColumn {
   width: 60%;
   height: 100%;
   margin-left: auto;
   padding: 0 100px 100px 100px;
-  color: var(--grey);
 }
 html body .App .infoColumn .margin {
   height: 100px;
 }
 html body .App .infoColumn h1::before {
   content: "";
-  background-color: var(--green);
+  background-color: var(--secondary-color);
   position: relative;
   display: block;
   z-index: -1;
@@ -172,9 +158,8 @@ html body .App .infoColumn .cards {
   margin: 10px 0;
 }
 html body .App .infoColumn .cards:hover {
-  border-radius: 15px;
-  background: linear-gradient(145deg, #2a1131, #230e29);
-  box-shadow: 5px 5px 18px rgba(16, 6, 18, 0.8039215686), -5px -5px 18px #3d1a48;
+  border-radius: 17px;
+  box-shadow: 5px 5px 17px #dbd3cb, -5px -5px 17px #eae3d9;
 }
 html body .App .infoColumn .tech-section .techCard {
   margin: 10px 0;
@@ -185,16 +170,23 @@ html body .App .infoColumn .tech-section .techCard {
   gap: 10px;
 }
 html body .App .infoColumn .tech-section .techCard .techBox {
-  box-shadow: 0px 5px 5px var(--black);
+  box-shadow: 5px 5px 17px #dbd3cb, -5px -5px 17px #eae3d9;
   border-radius: 10px;
   height: 70px;
   width: 70px;
+}
+html body .App .infoColumn .educ-section .educCard .icon {
+  height: 15px;
+  width: 15px;
+  filter: invert(0);
+  margin-left: 6px;
+  position: relative;
+  top: 1px;
 }
 html body .App .infoColumn .educ-section .educCard:hover .linkIcon {
   transition: 0.06s ease-in-out;
   right: -1px;
   top: -1px;
-  filter: invert(100) brightness(100%);
 }
 html body .App .infoColumn .educ-section .educCard .course-works-row {
   margin-top: 10px;
@@ -221,7 +213,6 @@ html body .App .infoColumn .educ-section .educCard .course-works-row:hover ul {
   opacity: 1;
 }
 html body .App .infoColumn .proj-section .projCard a {
-  color: white;
   font-family: "Poppins", sans-serif;
   text-decoration: none;
 }
@@ -229,7 +220,6 @@ html body .App .infoColumn .proj-section .projCard:hover .linkIcon {
   transition: 0.06s ease-in-out;
   right: -1px;
   top: -1px;
-  filter: invert(100) brightness(100%);
 }
 html body .App .infoColumn .proj-section .projCard .thumbnail {
   border: 2px solid rgba(192, 207, 209, 0.3294117647);
@@ -242,7 +232,6 @@ html body .App .infoColumn .proj-section .projCard .thumbnail {
 html body .App .infoColumn .proj-section .projCard .linkIcon {
   height: 15px;
   width: 15px;
-  filter: invert(100) brightness(70%);
   margin-left: 6px;
   position: relative;
   top: 1px;
@@ -259,10 +248,6 @@ html body .App .infoColumn .proj-section .projCard .flairs div {
   padding: 2px 8px;
   border-radius: 12px;
 }
-html body .App .infoColumn .proj-section .projCard .flairs div p {
-  color: var(--green);
-}
-
 @media screen and (max-width: 767px) {
   html body .App {
     height: 100%;
@@ -319,8 +304,8 @@ html body .App .infoColumn .proj-section .projCard .flairs div p {
 
 @keyframes fade-in {
   0% {
-    color: var(--green);
-    text-shadow: 4px 0px 2px var(--green);
+    color: var(--secondary-color);
+    text-shadow: 4px 0px 2px var(--secondary-color);
     right: -15px;
     opacity: 0%;
   }
@@ -342,7 +327,7 @@ html body .App .infoColumn .proj-section .projCard .flairs div p {
     text-shadow: none;
   }
   100% {
-    text-shadow: 0px 3px 2px black;
+    text-shadow: 0px 1px 1px black;
     -webkit-clip-path: inset(0 0 0 0);
             clip-path: inset(0 0 0 0);
   }

@@ -2,9 +2,16 @@
 :root {
     --black: #0A0C08;
     --white: #E6FAFC;
+
+    --font-color: #1a1a1a;      // Black or White
+    --primary-color: #ebe3da;   // Peach
+    --secondary-color: #3eb5f0; // Cyan
+    --tertiary-color: #d4c8ba;  // Darker Peach 
+    --quarternary-color: #2970b3; // Darker Cyan
+
     --grey: #c0cfd1;
     --green: #43F939;
-    --flair: #43f93934;
+    --flair: #3eb5f085;
     --purple: #27102e;
     --black-purple: #100514;
 
@@ -15,12 +22,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    // border: 1px solid pink
 }
 
 h1 {
     font-family: var(--header-text);
     font-weight: 400;
+    color: var(--font-color);
     span {
         font-weight: 700;
         white-space: nowrap;
@@ -29,23 +36,13 @@ h1 {
 h4, p, a {
     font-family: var(--body-text);
     font-weight: 400;
-    color: var(--grey);
+    color: var(--font-color);
     text-decoration: none;
     span {
         font-weight: 700;
     }
 }
-a {
-    color: white;
-}
-.icon {
-    height: 15px;
-    width: 15px;
-    filter: invert(100) brightness(70%);
-    margin-left: 6px;
-    position: relative;
-    top: 1px;
-}
+
 
 html {
     scroll-behavior: smooth !important;
@@ -53,8 +50,8 @@ html {
         background: var(--purple);
         .App {
             background: radial-gradient(circle farthest-side at var(--x) var(--y), 
-                                        var(--purple) 0%, 
-                                        var(--black-purple) 100%);
+                                        var(--primary-color) 0%, 
+                                        var(--tertiary-color) 100%);
             background-repeat: no-repeat;
             background-attachment: fixed;                      
             min-height: 100%;
@@ -67,16 +64,11 @@ html {
                 height: 100%;
                 position: fixed;
                 padding: 100px 50px 100px 100px;
-                color: var(--white);
                 h1 {
                     min-width: 350px;
                     font-size: 50px;
                     line-height: 50px;
                     margin-bottom: 5px;
-                }
-                h4 {
-                    font-size: 16px;
-                    color: var(--grey);
                 }
                 .sec-list {
                     display: flex;
@@ -89,13 +81,12 @@ html {
                     transition: .2s ease-in-out;
                     a {
                         text-decoration: none;
-                        color: var(--grey);
                         width: auto;
                         padding-left: 30px;
                         transition: .2s ease-in-out;
                         &::after {
                             content: "";
-                            background-color: var(--green);
+                            background-color: var(--secondary-color);
                             position: absolute;
                             left: 2px;
                             margin-left: 100px;
@@ -112,12 +103,12 @@ html {
                     }
                     &:hover {
                         a {
-                            opacity: .2;
+                            opacity: .4;
                             transition: .2s ease-in-out;
                             &:hover {
                                 font-weight: 700;
                                 opacity: 1;
-                                color: var(--green);
+                                color: var(--secondary-color);
                                 padding-left: 80px;
                             }
                         }
@@ -130,7 +121,7 @@ html {
                         height: 30px;
                         width: 30px;
                         img {
-                            filter: invert(100%) brightness(75%);
+                            // filter: invert(100%) brightness(75%);
                             cursor: pointer;
                         }
                     }
@@ -142,7 +133,7 @@ html {
                 left: 20px;
                 height: 55px;
                 width: 55px;
-                // box-shadow: 0 0 5px 5px rgba(black, 0.5);
+                filter: invert(100);
             }
             // ----------------------------- RIGHT COLUMN -----------------------------
             .infoColumn {
@@ -150,14 +141,13 @@ html {
                 height: 100%;
                 margin-left: auto;
                 padding: 0 100px 100px 100px;
-                color: var(--grey);
                 .margin {
                     height: 100px;
                 }
                 h1 {
                     &::before {
                         content: "";
-                        background-color: var(--green);
+                        background-color: var(--secondary-color);
                         position: relative;
                         display: block;
                         z-index: -1;
@@ -174,10 +164,9 @@ html {
                     transition: ease-in-out .2s;
                     margin: 10px 0;
                     &:hover {                  
-                        border-radius: 15px;
-                        background: linear-gradient(145deg, #2a1131, #230e29);
-                        box-shadow:  5px 5px 18px #100612cd,
-                                    -5px -5px 18px #3d1a48;
+                        border-radius: 17px;
+                        box-shadow:  5px 5px 17px #dbd3cb,
+                                    -5px -5px 17px #eae3d9;
                     }
                 }
                 .tech-section {
@@ -189,7 +178,8 @@ html {
                         flex-wrap: wrap;
                         gap: 10px;
                         .techBox {
-                            box-shadow: 0px 5px 5px var(--black);
+                            box-shadow:  5px 5px 17px #dbd3cb,
+                                        -5px -5px 17px #eae3d9;
                             border-radius: 10px;
                             height: 70px;
                             width: 70px;
@@ -198,12 +188,19 @@ html {
                 }
                 .educ-section {
                     .educCard {
+                        .icon {
+                            height: 15px;
+                            width: 15px;
+                            filter: invert(0);
+                            margin-left: 6px;
+                            position: relative;
+                            top: 1px;
+                        }
                         &:hover {                  
                             .linkIcon {
                                 transition: .06s ease-in-out;
                                 right: -1px;
                                 top: -1px;
-                                filter: invert(100) brightness(100%);
                             }
                         }
                         .course-works-row {
@@ -237,7 +234,7 @@ html {
                 .proj-section {
                     .projCard {
                         a {
-                            color: white;
+                            // color: white;
                             font-family: 'Poppins', sans-serif;
                             text-decoration: none;
                         }
@@ -246,7 +243,6 @@ html {
                                 transition: .06s ease-in-out;
                                 right: -1px;
                                 top: -1px;
-                                filter: invert(100) brightness(100%);
                             }
                         }
                         .thumbnail {
@@ -259,7 +255,6 @@ html {
                         .linkIcon {
                             height: 15px;
                             width: 15px;
-                            filter: invert(100) brightness(70%);
                             margin-left: 6px;
                             position: relative;
                             top: 1px;
@@ -273,7 +268,7 @@ html {
                                 font-size: 12px;
                                 background-color: var(--flair);
                                 p {
-                                    color: var(--green);
+                                    // color: var(--green);
                                 }
                                 padding: 2px 8px;
                                 border-radius: 12px;
@@ -350,8 +345,8 @@ html {
 }
 @keyframes fade-in {
     0% {
-        color: var(--green);
-        text-shadow: 4px 0px 2px var(--green);
+        color: var(--secondary-color);
+        text-shadow: 4px 0px 2px var(--secondary-color);
         right: -15px;
         opacity: 0%;
     }
@@ -372,7 +367,7 @@ html {
         text-shadow: none;
     }
     100% {
-        text-shadow: 0px 3px 2px black;
+        text-shadow: 0px 1px 1px black;
         clip-path: inset(0 0 0 0);
     }
 }

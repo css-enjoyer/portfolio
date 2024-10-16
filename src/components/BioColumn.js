@@ -9,7 +9,7 @@ function BioColumn() {
 		<h1>Hey, my name is <span>Isaac Reyes</span></h1>
 		<h4>I study <span>Computer Science</span> at the <br />Univeristy of Santo Tomas, Philippines</h4>
 		
-		<img className="logo" src={logo}></img>
+		<img className="logo" src={logo} alt="logo"></img>
 
 		<div className="sec-list">
 			<a href="#about-margin">About Me</a>
