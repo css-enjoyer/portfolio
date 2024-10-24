@@ -3,7 +3,7 @@ import BioColumn from './components/BioColumn';
 import InfoColumn from './components/InfoColumn';
 import React, { useEffect, useRef } from 'react';
 
-
+// USE NPM DEPLOY
 function App() {
 	const bgRef = useRef(null);
 	useEffect(() => {
@@ -51,5 +51,6 @@ export default App;
 // - Graduation/School Year Countdown
 // - Create an optional button to show ALL projects made
 // - Idle video display on bio bio column
-// - Create interesting and impressive projects
+// - Create interesting and impressive projects == sorta
 // - Start contributing to open source projects
+// - Fix display on ipads (both columns intersect)

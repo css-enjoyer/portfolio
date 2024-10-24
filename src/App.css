@@ -46,7 +46,7 @@ html {
   scroll-behavior: smooth !important;
 }
 html body {
-  background: var(--purple);
+  background: var(--primary-color);
 }
 html body .App {
   background: radial-gradient(circle farthest-side at var(--x) var(--y), var(--primary-color) 0%, var(--tertiary-color) 100%);
