@@ -306,7 +306,7 @@ html body .App .infoColumn .proj-section .projCard .flairs div {
   }
 }
 .sectionVisible {
-  animation: fade-in 0.5s ease-in-out;
+  animation: fade-in 1s ease-in-out;
   position: relative;
 }
 
@@ -323,7 +323,7 @@ html body .App .infoColumn .proj-section .projCard .flairs div {
   }
 }
 .headerVisible {
-  animation: 1.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-right both;
+  animation: 2.5s cubic-bezier(0.25, 1, 0.3, 1) wipe-in-right both;
 }
 
 @keyframes wipe-in-right {
