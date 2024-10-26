@@ -7,7 +7,7 @@ function BioColumn() {
   	return (
 	<div className="bioColumn">
 		<h1>Hey, my name is <span>Isaac Reyes</span></h1>
-		<h4>I study <span>Computer Science</span> at the <br />Univeristy of Santo Tomas, Philippines</h4>
+		<h4>I'm a <span>Fullstack Developer</span> <br />studying <span>Computer Science</span> at the <br /><span>University of Santo Tomas</span>, Philippines</h4>
 		
 		<img className="logo" src={logo} alt="logo"></img>
 
