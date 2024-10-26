@@ -23,6 +23,8 @@ import mongoImg from '.././images/technologies/mongodb.png';
 import muiImg from '.././images/technologies/mui.png';
 import tsImg from '.././images/technologies/ts.png';
 import fbImg from '.././images/technologies/fb.png';
+import twImg from '.././images/technologies/tw.png';
+import pyImg from '.././images/technologies/py.png';
 
 import { useInView } from 'react-intersection-observer';
 
@@ -67,6 +69,8 @@ function ProjColumn() {
 						image11={muiImg} 
 						image12={tsImg} 
 						image13={fbImg} 
+						image14={twImg} 
+						image15={pyImg} 
 						
 						
 						/>
