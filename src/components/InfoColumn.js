@@ -77,7 +77,7 @@ function ProjColumn() {
 		<div ref={projRef} className={`${"proj-section section"} + ${projIsVisible ? "sectionVisible" : ""}`} id="proj-section">
 			<h1 ref={projHeadRef} className={`${projHeadIsVisible ? "headerVisible" : ""}`}>Projects</h1>
 			<ProjCard img={drrsImage}
-					title="UST Miguel de Benavides - Discussion Room Reservation System"
+					title="University of Santo Tomas Miguel de Benavides Library - Discussion Room Reservation System"
 					subtitle="Software Engineering capstone for Junior Year. Real-time updates of rooms for all satellite library branches within the University of Santo Tomas Manila campus. Features automated email notifications, automated reservation cancellation, student authentication, data analytics. "
 					titlelink="https://github.com/css-enjoyer/drr-system"
 					f1="React"

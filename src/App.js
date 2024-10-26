@@ -3,17 +3,17 @@ import BioColumn from './components/BioColumn';
 import InfoColumn from './components/InfoColumn';
 import React, { useEffect, useRef } from 'react';
 
-// USE NPM DEPLOY
+// USE NPM RUN DEPLOY
 function App() {
 	const bgRef = useRef(null);
 	useEffect(() => {
 		document.title = "Isaac Reyes"
-	 }, []);
+	}, []);
 
 	useEffect(() => {
 		const updateMousePosition = (ev) => {
-			if(!bgRef.current) return;
-			const {clientX, clientY} = ev;
+			if (!bgRef.current) return;
+			const { clientX, clientY } = ev;
 			// console.log(clientX, clientY);
 			bgRef.current.style.setProperty("--x", `${clientX}px`);
 			bgRef.current.style.setProperty("--y", `${clientY}px`);
@@ -22,14 +22,14 @@ function App() {
 		return () => {
 			window.removeEventListener('mousemove', updateMousePosition);
 		}
-	}, []) 
-	
-  	return (
-	<div ref={bgRef} className="App">
-		<BioColumn />
-		<InfoColumn />
-	</div>
-  	);
+	}, [])
+
+	return (
+		<div ref={bgRef} className="App">
+			<BioColumn />
+			<InfoColumn />
+		</div>
+	);
 }
 
 export default App;
