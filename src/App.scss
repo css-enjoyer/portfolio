@@ -281,21 +281,7 @@ html {
     }
 }
 
-@media screen and (max-width: 840px) {
-    html {
-        body {
-            .App {
-                .bioColumn {
-                    h1 {
-                        font-size: 40px;
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 900px) {
     html {
         body {
             .App {
